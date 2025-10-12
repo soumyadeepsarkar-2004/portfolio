@@ -2,10 +2,6 @@
 
 A modern, responsive portfolio website showcasing my journey as a Digital Craftsman and Web3 Developer.
 
-## 🚀 Live Demo
-
-Visit the live portfolio: [https://soumyadeepsarkar.vercel.app](https://soumyadeepsarkar.vercel.app)
-
 ## 📋 About
 
 This portfolio represents my passion for creating robust full-stack solutions and exploring the decentralized future with Web3 technologies. As an Information Technology undergraduate at UIT, Burdwan University, I specialize in blockchain development, dApp creation, and modern web technologies.
