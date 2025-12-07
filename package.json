@@ -7,7 +7,7 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-  "postbuild": "node scripts/postbuild.js",
+    "postbuild": "node scripts/postbuild.js",
     "preview": "vite preview",
     "lint": "eslint assets/scripts/**/*.js",
     "format": "prettier --write ."
@@ -27,12 +27,12 @@
   "author": {
     "name": "Soumyadeep Sarkar",
     "email": "soumyadeepsarkar2004@outlook.com",
-  "url": "https://github.com/soumyadeepsarkar-2004"
+    "url": "https://github.com/soumyadeepsarkar-2004"
   },
   "license": "MIT",
   "repository": {
     "type": "git",
-  "url": "https://github.com/soumyadeepsarkar-2004/portfolio.git"
+    "url": "https://github.com/soumyadeepsarkar-2004/portfolio.git"
   },
   "homepage": "https://soumyadeepsarkar.vercel.app",
   "devDependencies": {
@@ -41,6 +41,7 @@
     "vite": "^7.1.9"
   },
   "dependencies": {
+    "@vercel/analytics": "^1.6.1",
     "lucide": "^0.545.0"
   },
   "engines": {

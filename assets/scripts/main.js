@@ -1,9 +1,13 @@
 // Main application entry point
+import { inject } from '@vercel/analytics';
 import { NavigationManager } from './navigation.js';
 import { MobileMenuManager } from './mobile-menu.js';
 import { TimeClockManager } from './time-clock.js';
 import { AnimationManager } from './animations.js';
 import { detailsData } from '../../data/content.js';
+
+// Initialize Vercel Web Analytics
+inject();
 
 // Initialize Lucide icons
 if (typeof lucide !== 'undefined') {
