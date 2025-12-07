@@ -110,3 +110,8 @@ window.showDetail = function(type, key) {
         window.navigationManager.showDetail(type, key, window.detailsData);
     }
 };
+
+
+
+
+

@@ -2,6 +2,23 @@
 body {
     font-family: 'Inter', sans-serif;
     background-color: var(--bg-color);
+    /* Subtle, professional background with soft glows and a fine grid */
+    background-image:
+        radial-gradient(900px circle at 10% -10%, rgba(56, 189, 248, 0.08), transparent 40%),
+        radial-gradient(600px circle at 90% 110%, rgba(99, 102, 241, 0.08), transparent 40%),
+        /* fine grid */
+        linear-gradient(0deg, rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+    background-size:
+        100% 100%,
+        100% 100%,
+        20px 20px,
+        20px 20px;
+    background-position:
+        center,
+        center,
+        0 0,
+        0 0;
     color: var(--text-color);
     transition: background-color 0.3s ease;
 }
@@ -22,4 +39,60 @@ body {
 
 ::-webkit-scrollbar-thumb:hover {
     background: #0ea5e9;
+}
+
+/* Wave Animation for Emoji */
+@keyframes wave {
+
+    0%,
+    100% {
+        transform: rotate(0deg);
+    }
+
+    10% {
+        transform: rotate(14deg);
+    }
+
+    20% {
+        transform: rotate(-8deg);
+    }
+
+    30% {
+        transform: rotate(14deg);
+    }
+
+    40% {
+        transform: rotate(-4deg);
+    }
+
+    50% {
+        transform: rotate(10deg);
+    }
+
+    60% {
+        transform: rotate(0deg);
+    }
+}
+
+.animate-wave {
+    display: inline-block;
+    animation: wave 2.5s ease-in-out infinite;
+    transform-origin: 70% 70%;
+}
+
+/* Smooth page load fade in */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.fade-in-up {
+    animation: fadeInUp 0.6s ease-out forwards;
 }

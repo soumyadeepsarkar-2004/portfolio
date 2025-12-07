@@ -7,3 +7,8 @@ Recommended specifications:
 - Size: 400x400 pixels or larger
 - Aspect ratio: Square (1:1)
 - File size: Under 1MB for optimal loading
+
+
+
+
+

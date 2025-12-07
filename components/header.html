@@ -1,27 +1,88 @@
 <!-- Header Component -->
-<header class="fixed top-0 left-0 right-0 z-50 transition-all duration-300" id="header">
-    <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+<header
+    class="fixed top-0 left-0 right-0 z-50 transition-all duration-300 bg-[#0a0a0a]/80 backdrop-blur-lg border-b border-white/5"
+    id="header">
+    <div class="container mx-auto px-6 py-3 flex justify-between items-center">
         <a href="#" id="home-link" class="brand-link flex items-center gap-3 text-white transition-colors">
             <img src="assets/images/profile-avatar.jpg" alt="Soumyadeep Sarkar" class="brand-avatar">
-            <span class="text-xl font-bold">Soumyadeep Sarkar</span>
+            <div class="hidden sm:block">
+                <span class="text-lg font-bold block leading-tight">Soumyadeep Sarkar</span>
+                <span class="text-xs text-gray-400">Full-Stack Developer</span>
+            </div>
         </a>
-        <nav class="hidden md:flex items-center gap-4">
-            <a href="https://www.linkedin.com/in/soumyadeep-sarkar2004/" target="_blank" class="p-2 rounded-full hover:bg-white/10 transition-colors" aria-label="LinkedIn Profile">
-                <i data-lucide="linkedin" class="w-5 h-5"></i>
+
+        <!-- Desktop Navigation -->
+        <nav class="hidden md:flex items-center gap-2">
+            <a href="#about"
+                class="nav-link px-3 py-2 rounded-lg text-gray-300 hover:text-white hover:bg-white/5 transition-all text-sm font-medium">About</a>
+            <a href="#experience"
+                class="nav-link px-3 py-2 rounded-lg text-gray-300 hover:text-white hover:bg-white/5 transition-all text-sm font-medium">Experience</a>
+            <a href="#projects"
+                class="nav-link px-3 py-2 rounded-lg text-gray-300 hover:text-white hover:bg-white/5 transition-all text-sm font-medium">Projects</a>
+            <a href="#education"
+                class="nav-link px-3 py-2 rounded-lg text-gray-300 hover:text-white hover:bg-white/5 transition-all text-sm font-medium">Education</a>
+            <a href="#skills"
+                class="nav-link px-3 py-2 rounded-lg text-gray-300 hover:text-white hover:bg-white/5 transition-all text-sm font-medium">Skills</a>
+            <a href="#contact"
+                class="nav-link px-3 py-2 rounded-lg text-gray-300 hover:text-white hover:bg-white/5 transition-all text-sm font-medium">Contact</a>
+
+            <div class="h-6 w-px bg-white/10 mx-2"></div>
+
+            <a href="https://www.linkedin.com/in/soumyadeep-sarkar2004/" target="_blank" rel="noopener noreferrer"
+                class="p-2 rounded-lg hover:bg-sky-500/10 transition-colors group" aria-label="LinkedIn Profile">
+                <i data-lucide="linkedin" class="w-5 h-5 text-gray-400 group-hover:text-sky-400"></i>
             </a>
-            <a href="https://github.com/soumyadeepsarkar-2004" target="_blank" class="p-2 rounded-full hover:bg-white/10 transition-colors" aria-label="GitHub Profile">
-                <i data-lucide="github" class="w-5 h-5"></i>
+            <a href="https://github.com/soumyadeepsarkar-2004" target="_blank" rel="noopener noreferrer"
+                class="p-2 rounded-lg hover:bg-white/10 transition-colors group" aria-label="GitHub Profile">
+                <i data-lucide="github" class="w-5 h-5 text-gray-400 group-hover:text-white"></i>
             </a>
-            <a href="mailto:soumyadeepsarkar2004@outlook.com" class="bg-white text-black font-medium py-2 px-4 rounded-lg hover:bg-gray-200 transition-colors">Contact</a>
+            <button id="resume-open-btn"
+                class="ml-1 bg-emerald-500/20 hover:bg-emerald-500/30 text-emerald-400 font-medium py-2 px-4 rounded-lg transition-colors border border-emerald-500/30"
+                aria-controls="resume-modal">
+                <i data-lucide="file-text" class="w-4 h-4 inline mr-1"></i> Resume
+            </button>
+            <a href="mailto:soumyadeepsarkar2004@outlook.com"
+                class="ml-1 bg-gradient-to-r from-sky-500 to-cyan-500 hover:from-sky-600 hover:to-cyan-600 text-white font-medium py-2 px-4 rounded-lg transition-all shadow-lg shadow-sky-500/20 hover:shadow-sky-500/30">
+                <i data-lucide="mail" class="w-4 h-4 inline mr-1"></i> Hire Me
+            </a>
         </nav>
-        <button id="mobile-menu-button" class="md:hidden" aria-label="Toggle mobile menu">
+
+        <!-- Mobile Menu Button -->
+        <button id="mobile-menu-button" class="md:hidden p-2 rounded-lg hover:bg-white/10 transition-colors"
+            aria-label="Toggle mobile menu">
             <i data-lucide="menu" class="w-6 h-6"></i>
         </button>
     </div>
+
     <!-- Mobile Menu -->
-    <div id="mobile-menu" class="hidden md:hidden bg-black/80 backdrop-blur-lg p-6">
-        <a href="https://www.linkedin.com/in/soumyadeep-sarkar2004/" target="_blank" class="block py-2">LinkedIn</a>
-    <a href="https://github.com/soumyadeepsarkar-2004" target="_blank" class="block py-2">GitHub</a>
-    <a href="mailto:soumyadeepsarkar2004@outlook.com" class="block mt-2 bg-white text-black font-medium py-2 px-4 rounded-lg text-center">Contact</a>
+    <div id="mobile-menu" class="hidden md:hidden bg-[#0a0a0a]/95 backdrop-blur-lg border-t border-white/5">
+        <div class="container mx-auto px-6 py-4 space-y-2">
+            <a href="#about" class="block py-3 px-4 rounded-lg hover:bg-white/5 transition-colors">About</a>
+            <a href="#experience" class="block py-3 px-4 rounded-lg hover:bg-white/5 transition-colors">Experience</a>
+            <a href="#projects" class="block py-3 px-4 rounded-lg hover:bg-white/5 transition-colors">Projects</a>
+            <a href="#education" class="block py-3 px-4 rounded-lg hover:bg-white/5 transition-colors">Education</a>
+            <a href="#skills" class="block py-3 px-4 rounded-lg hover:bg-white/5 transition-colors">Skills</a>
+            <a href="#contact" class="block py-3 px-4 rounded-lg hover:bg-white/5 transition-colors">Contact</a>
+
+            <div class="h-px bg-white/10 my-4"></div>
+
+            <div class="flex gap-3 py-2">
+                <a href="https://www.linkedin.com/in/soumyadeep-sarkar2004/" target="_blank"
+                    class="flex-1 py-3 px-4 bg-sky-500/10 text-sky-400 rounded-lg text-center font-medium">LinkedIn</a>
+                <a href="https://github.com/soumyadeepsarkar-2004" target="_blank"
+                    class="flex-1 py-3 px-4 bg-white/5 rounded-lg text-center font-medium">GitHub</a>
+            </div>
+
+            <button id="mobile-resume-open-btn"
+                class="block w-full mt-2 bg-emerald-500/20 text-emerald-400 font-bold py-3 px-4 rounded-lg text-center border border-emerald-500/30"
+                aria-controls="resume-modal">
+                <i data-lucide="file-text" class="w-4 h-4 inline mr-2"></i> View Resume
+            </button>
+
+            <a href="mailto:soumyadeepsarkar2004@outlook.com"
+                class="block w-full mt-2 bg-gradient-to-r from-sky-500 to-cyan-500 text-white font-bold py-3 px-4 rounded-lg text-center">
+                <i data-lucide="mail" class="w-4 h-4 inline mr-2"></i> Get in Touch
+            </a>
+        </div>
     </div>
 </header>

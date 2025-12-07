@@ -49,7 +49,8 @@ export class MobileMenuManager {
         }
 
         this.mobileMenuButton.addEventListener('click', () => {
-            this.mobileMenu.classList.toggle('hidden');
+            const isOpen = this.mobileMenu.classList.toggle('hidden') === false;
+            this.mobileMenuButton.setAttribute('aria-expanded', String(isOpen));
         });
 
         // Close mobile menu when clicking outside
@@ -57,6 +58,7 @@ export class MobileMenuManager {
             if (!this.mobileMenuButton.contains(e.target) && 
                 !this.mobileMenu.contains(e.target)) {
                 this.mobileMenu.classList.add('hidden');
+                this.mobileMenuButton.setAttribute('aria-expanded', 'false');
             }
         });
 
@@ -64,7 +66,13 @@ export class MobileMenuManager {
         document.addEventListener('keydown', (e) => {
             if (e.key === 'Escape') {
                 this.mobileMenu.classList.add('hidden');
+                this.mobileMenuButton.setAttribute('aria-expanded', 'false');
             }
         });
     }
 }
+
+
+
+
+

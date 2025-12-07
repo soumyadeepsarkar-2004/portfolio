@@ -6,3 +6,751 @@
     --card-bg: #111111;
     --border-color: rgba(255, 255, 255, 0.1);
 }
+
+/* Light Theme Variables */
+.light-theme {
+    --bg-color: #FFFFFF;
+    --text-color: #1F2937;
+    --primary-color: #0ea5e9;
+    --card-bg: #F9FAFB;
+    --border-color: rgba(0, 0, 0, 0.1);
+}
+
+/* ============================================
+   COMPREHENSIVE LIGHT THEME OVERRIDES
+   ============================================ */
+
+/* Base body and main styling */
+.light-theme body {
+    background-color: #FFFFFF !important;
+    color: #1F2937 !important;
+}
+
+.light-theme main {
+    background-color: #FFFFFF !important;
+}
+
+/* Text color overrides */
+.light-theme .text-white,
+.light-theme h1,
+.light-theme h2,
+.light-theme h3,
+.light-theme h4,
+.light-theme h5,
+.light-theme h6 {
+    color: #111827 !important;
+}
+
+.light-theme .text-gray-300 {
+    color: #4B5563 !important;
+}
+
+.light-theme .text-gray-400 {
+    color: #6B7280 !important;
+}
+
+.light-theme .text-gray-500 {
+    color: #9CA3AF !important;
+}
+
+.light-theme .text-gray-600 {
+    color: #6B7280 !important;
+}
+
+/* Background color overrides */
+.light-theme .bg-\[\#0A0A0A\],
+.light-theme .bg-\[\#0a0a0a\] {
+    background-color: #FFFFFF !important;
+}
+
+.light-theme .bg-\[\#111\],
+.light-theme .bg-\[\#111111\] {
+    background-color: #F3F4F6 !important;
+}
+
+.light-theme .bg-gray-900 {
+    background-color: #F9FAFB !important;
+}
+
+.light-theme .bg-white\/5 {
+    background-color: rgba(0, 0, 0, 0.03) !important;
+}
+
+.light-theme .bg-white\/10 {
+    background-color: rgba(0, 0, 0, 0.05) !important;
+}
+
+.light-theme .bg-white\/20 {
+    background-color: rgba(0, 0, 0, 0.08) !important;
+}
+
+/* Gradient backgrounds in light mode */
+.light-theme .bg-gradient-to-br.from-\[\#111\],
+.light-theme .bg-gradient-to-br.from-\[\#0a0a0a\] {
+    background: linear-gradient(to bottom right, #F9FAFB, #F3F4F6) !important;
+}
+
+.light-theme .border-white\/10 {
+    border-color: rgba(0, 0, 0, 0.1) !important;
+}
+
+.light-theme .border-white\/20 {
+    border-color: rgba(0, 0, 0, 0.15) !important;
+}
+
+.light-theme .border-white\/30 {
+    border-color: rgba(0, 0, 0, 0.2) !important;
+}
+
+.light-theme header {
+    background-color: rgba(255, 255, 255, 0.8) !important;
+    backdrop-filter: blur(10px);
+}
+
+.light-theme .brand-link {
+    background-color: rgba(240, 240, 240, 0.5) !important;
+    border-color: rgba(14, 165, 233, 0.35) !important;
+}
+
+.light-theme #loading-screen {
+    background-color: #FFFFFF !important;
+}
+
+/* Card backgrounds - Comprehensive */
+.light-theme .spotlight-card,
+.light-theme .project-card,
+.light-theme .blog-card,
+.light-theme .testimonial-card,
+.light-theme .contact-card,
+.light-theme .skill-category-card,
+.light-theme .experience-card,
+.light-theme .experience-card-modern,
+.light-theme .education-card,
+.light-theme .certification-card,
+.light-theme .featured-project-card {
+    background: #F9FAFB !important;
+    border-color: rgba(0, 0, 0, 0.1) !important;
+}
+
+.light-theme .spotlight-card:hover,
+.light-theme .project-card:hover,
+.light-theme .blog-card:hover,
+.light-theme .experience-card-modern:hover {
+    border-color: rgba(14, 165, 233, 0.5) !important;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1) !important;
+}
+
+.light-theme footer {
+    background: linear-gradient(to top, #FFFFFF, transparent) !important;
+}
+
+.light-theme .custom-cursor,
+.light-theme .custom-cursor-follower {
+    mix-blend-mode: difference;
+}
+
+/* Light theme gradient backgrounds */
+.light-theme .bg-gradient-to-br {
+    opacity: 0.8;
+}
+
+.light-theme .from-sky-500\/20,
+.light-theme .from-sky-500\/10 {
+    --tw-gradient-from: rgba(14, 165, 233, 0.2) !important;
+}
+
+.light-theme .to-indigo-500\/10 {
+    --tw-gradient-to: rgba(99, 102, 241, 0.15) !important;
+}
+
+.light-theme .from-purple-500\/20,
+.light-theme .from-purple-500\/10 {
+    --tw-gradient-from: rgba(168, 85, 247, 0.2) !important;
+}
+
+.light-theme .from-green-500\/20,
+.light-theme .from-green-500\/10 {
+    --tw-gradient-from: rgba(34, 197, 94, 0.2) !important;
+}
+
+/* Badge and pill backgrounds */
+.light-theme .bg-gradient-to-r.from-sky-500\/10 {
+    background: rgba(14, 165, 233, 0.15) !important;
+}
+
+.light-theme .bg-green-500\/10 {
+    background: rgba(34, 197, 94, 0.15) !important;
+    border-color: rgba(34, 197, 94, 0.3) !important;
+}
+
+.light-theme .text-green-400 {
+    color: #059669 !important;
+}
+
+.light-theme .bg-green-500 {
+    background-color: #10b981 !important;
+}
+
+/* Sky/Cyan color text adjustments */
+.light-theme .text-sky-400,
+.light-theme .text-sky-300 {
+    color: #0284c7 !important;
+}
+
+.light-theme .text-cyan-400 {
+    color: #0891b2 !important;
+}
+
+.light-theme .text-indigo-400 {
+    color: #6366f1 !important;
+}
+
+.light-theme .text-purple-400 {
+    color: #9333ea !important;
+}
+
+.light-theme .text-emerald-400 {
+    color: #059669 !important;
+}
+
+/* Fix text shadows and glows in light mode */
+.light-theme .brand-avatar {
+    box-shadow: 0 0 20px rgba(14, 165, 233, 0.3) !important;
+}
+
+/* Ensure buttons remain visible */
+.light-theme button,
+.light-theme .btn {
+    color: inherit;
+}
+
+/* Modal backgrounds */
+.light-theme [role="dialog"] {
+    background-color: rgba(255, 255, 255, 0.95) !important;
+}
+
+.light-theme #resume-modal .modal-content {
+    background-color: #FFFFFF !important;
+}
+
+/* Navigation menu */
+.light-theme nav a {
+    color: #374151 !important;
+}
+
+.light-theme nav a:hover {
+    color: #0ea5e9 !important;
+}
+
+/* ============================================
+   ADDITIONAL COMPONENT OVERRIDES
+   ============================================ */
+
+/* Tags and badges */
+.light-theme .project-tech-tag {
+    background: rgba(14, 165, 233, 0.15) !important;
+    border-color: rgba(14, 165, 233, 0.3) !important;
+    color: #0284c7 !important;
+}
+
+.light-theme .project-tech-tag-sm {
+    background: rgba(0, 0, 0, 0.05) !important;
+    color: #6B7280 !important;
+}
+
+.light-theme .exp-tag {
+    background: rgba(0, 0, 0, 0.05) !important;
+    border-color: rgba(0, 0, 0, 0.1) !important;
+    color: #6B7280 !important;
+}
+
+.light-theme .edu-tag {
+    background: rgba(14, 165, 233, 0.15) !important;
+    border-color: rgba(14, 165, 233, 0.3) !important;
+    color: #0284c7 !important;
+}
+
+.light-theme .learning-tag {
+    background: rgba(14, 165, 233, 0.2) !important;
+    color: #0284c7 !important;
+}
+
+/* Glass morphism in light theme */
+.light-theme .glass {
+    background: rgba(255, 255, 255, 0.8) !important;
+    border-color: rgba(0, 0, 0, 0.1) !important;
+}
+
+/* Gradient text remains vibrant */
+.light-theme .gradient-text {
+    background: linear-gradient(135deg, #0284c7 0%, #6366f1 50%, #9333ea 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+/* Profile image border */
+.light-theme .profile-image {
+    border-color: rgba(14, 165, 233, 0.5) !important;
+    box-shadow: 0 0 30px rgba(14, 165, 233, 0.3) !important;
+}
+
+/* Emerald badge backgrounds */
+.light-theme .bg-emerald-500\/20 {
+    background: rgba(16, 185, 129, 0.2) !important;
+}
+
+.light-theme .border-emerald-500\/30 {
+    border-color: rgba(16, 185, 129, 0.35) !important;
+}
+
+.light-theme .border-emerald-500\/50 {
+    border-color: rgba(16, 185, 129, 0.55) !important;
+}
+
+/* Sky border colors */
+.light-theme .border-sky-500\/30 {
+    border-color: rgba(14, 165, 233, 0.4) !important;
+}
+
+/* Absolute positioned gradient orbs */
+.light-theme .absolute.bg-sky-500\/10,
+.light-theme .absolute.bg-indigo-500\/10 {
+    opacity: 0.3 !important;
+}
+
+/* Blog and testimonial cards */
+.light-theme .blog-card,
+.light-theme .testimonial-card {
+    background: #F9FAFB !important;
+    border-color: rgba(0, 0, 0, 0.1) !important;
+}
+
+.light-theme .blog-card:hover,
+.light-theme .testimonial-card:hover {
+    border-color: rgba(14, 165, 233, 0.4) !important;
+}
+
+/* Status indicator */
+.light-theme .status-indicator {
+    background-color: rgba(16, 185, 129, 0.15) !important;
+    border-color: rgba(16, 185, 129, 0.4) !important;
+    color: #059669 !important;
+}
+
+/* Animate ping dot */
+.light-theme .animate-ping {
+    background-color: #10b981 !important;
+}
+
+/* Contact form inputs */
+.light-theme input,
+.light-theme textarea,
+.light-theme select {
+    background-color: #F9FAFB !important;
+    border-color: rgba(0, 0, 0, 0.15) !important;
+    color: #111827 !important;
+}
+
+.light-theme input:focus,
+.light-theme textarea:focus,
+.light-theme select:focus {
+    border-color: rgba(14, 165, 233, 0.5) !important;
+    background-color: #FFFFFF !important;
+}
+
+.light-theme input::placeholder,
+.light-theme textarea::placeholder {
+    color: #9CA3AF !important;
+}
+
+/* Ensure icon colors adapt */
+.light-theme i[data-lucide] {
+    color: inherit;
+}
+
+/* Loading screen */
+.light-theme #loading-screen {
+    background-color: #FFFFFF !important;
+}
+
+.light-theme #loading-screen .text-white {
+    color: #111827 !important;
+}
+
+/* ============================================
+   GRADIENT OVERRIDES FOR ALL CARDS
+   ============================================ */
+
+/* Override all bg-gradient-to-br cards */
+.light-theme .bg-gradient-to-br.from-white\/5,
+.light-theme .bg-gradient-to-br.from-white\/\[0\.02\] {
+    background: #F9FAFB !important;
+}
+
+.light-theme .to-white\/\[0\.02\] {
+    background: #F9FAFB !important;
+}
+
+/* Badge gradient backgrounds */
+.light-theme .bg-gradient-to-br.from-sky-500\/20,
+.light-theme .bg-gradient-to-br.from-sky-500\/30 {
+    background: rgba(14, 165, 233, 0.2) !important;
+}
+
+.light-theme .bg-gradient-to-br.to-cyan-500\/20,
+.light-theme .bg-gradient-to-br.to-cyan-500\/30 {
+    background: rgba(6, 182, 212, 0.2) !important;
+}
+
+.light-theme .bg-gradient-to-br.from-purple-500\/20,
+.light-theme .bg-gradient-to-br.from-purple-500\/30 {
+    background: rgba(168, 85, 247, 0.2) !important;
+}
+
+.light-theme .bg-gradient-to-br.to-pink-500\/20,
+.light-theme .bg-gradient-to-br.to-pink-500\/30 {
+    background: rgba(236, 72, 153, 0.2) !important;
+}
+
+.light-theme .bg-gradient-to-br.from-green-500\/20,
+.light-theme .bg-gradient-to-br.from-green-500\/30 {
+    background: rgba(34, 197, 94, 0.2) !important;
+}
+
+.light-theme .bg-gradient-to-br.to-emerald-500\/20,
+.light-theme .bg-gradient-to-br.to-emerald-500\/30 {
+    background: rgba(16, 185, 129, 0.2) !important;
+}
+
+.light-theme .bg-gradient-to-br.from-orange-500\/20,
+.light-theme .bg-gradient-to-br.from-orange-500\/30 {
+    background: rgba(249, 115, 22, 0.2) !important;
+}
+
+.light-theme .bg-gradient-to-br.to-red-500\/20,
+.light-theme .bg-gradient-to-br.to-red-500\/30 {
+    background: rgba(239, 68, 68, 0.2) !important;
+}
+
+.light-theme .bg-gradient-to-br.from-yellow-500\/20,
+.light-theme .bg-gradient-to-br.from-yellow-500\/30 {
+    background: rgba(234, 179, 8, 0.2) !important;
+}
+
+/* Avatar gradients for testimonials */
+.light-theme .bg-gradient-to-br.from-sky-500\/30.to-cyan-500\/30,
+.light-theme .bg-gradient-to-br.from-indigo-500.to-indigo-600,
+.light-theme .bg-gradient-to-br.from-yellow-500.to-orange-600 {
+    opacity: 0.9 !important;
+}
+
+/* Text colors for special elements */
+.light-theme .text-yellow-400 {
+    color: #ca8a04 !important;
+}
+
+.light-theme .fill-yellow-400 {
+    fill: #ca8a04 !important;
+}
+
+/* Purple text */
+.light-theme .text-purple-400,
+.light-theme .text-purple-300 {
+    color: #9333ea !important;
+}
+
+/* Pink text */
+.light-theme .text-pink-300 {
+    color: #db2777 !important;
+}
+
+/* Orange text */
+.light-theme .text-orange-400 {
+    color: #ea580c !important;
+}
+
+/* ============================================
+   BACKDROP AND OVERLAY FIXES
+   ============================================ */
+
+/* Backdrop blur elements */
+.light-theme .backdrop-blur-sm {
+    background-color: rgba(255, 255, 255, 0.8) !important;
+}
+
+/* Badge with backdrop blur */
+.light-theme .bg-sky-500\/20.backdrop-blur-sm {
+    background: rgba(14, 165, 233, 0.2) !important;
+}
+
+.light-theme .bg-purple-500\/20.backdrop-blur-sm {
+    background: rgba(168, 85, 247, 0.2) !important;
+}
+
+.light-theme .bg-green-500\/20.backdrop-blur-sm {
+    background: rgba(34, 197, 94, 0.2) !important;
+}
+
+.light-theme .bg-orange-500\/20.backdrop-blur-sm {
+    background: rgba(249, 115, 22, 0.2) !important;
+}
+
+/* Ensure all section backgrounds are white */
+.light-theme section {
+    background-color: transparent !important;
+}
+
+/* Container backgrounds */
+.light-theme .container {
+    background-color: transparent !important;
+}
+
+/* ============================================
+   HEADER AND MOBILE MENU LIGHT THEME
+   ============================================ */
+
+/* Header in light mode */
+.light-theme header,
+.light-theme header.bg-\[\#0a0a0a\]\/80 {
+    background-color: rgba(255, 255, 255, 0.9) !important;
+    border-bottom-color: rgba(0, 0, 0, 0.1) !important;
+}
+
+/* Mobile menu in light mode */
+.light-theme #mobile-menu,
+.light-theme #mobile-menu.bg-\[\#0a0a0a\]\/95 {
+    background-color: rgba(255, 255, 255, 0.98) !important;
+    border-top-color: rgba(0, 0, 0, 0.1) !important;
+}
+
+/* Mobile menu links */
+.light-theme #mobile-menu a,
+.light-theme #mobile-menu button {
+    color: #374151 !important;
+}
+
+.light-theme #mobile-menu a:hover {
+    background-color: rgba(0, 0, 0, 0.05) !important;
+}
+
+/* Brand link in light mode */
+.light-theme .brand-link {
+    background-color: rgba(240, 240, 240, 0.7) !important;
+    border-color: rgba(14, 165, 233, 0.4) !important;
+}
+
+.light-theme .brand-link:hover {
+    background-color: rgba(14, 165, 233, 0.12) !important;
+}
+
+/* Brand text */
+.light-theme .brand-link span.text-lg {
+    color: #111827 !important;
+}
+
+/* Footer in light mode */
+.light-theme footer,
+.light-theme footer.bg-gradient-to-t {
+    background: linear-gradient(to top, #F9FAFB, transparent) !important;
+    border-top-color: rgba(0, 0, 0, 0.1) !important;
+}
+
+/* Preloader in light mode */
+.light-theme #loading-screen {
+    background-color: #FFFFFF !important;
+}
+
+.light-theme #loading-screen .text-white,
+.light-theme #loading-screen h1 {
+    color: #111827 !important;
+}
+
+.light-theme #loading-screen .text-gray-400,
+.light-theme #loading-screen .text-gray-500 {
+    color: #6B7280 !important;
+}
+
+/* Scroll to top button in light mode */
+.light-theme #scroll-to-top {
+    background-color: rgba(14, 165, 233, 0.2) !important;
+    border-color: rgba(14, 165, 233, 0.4) !important;
+}
+
+.light-theme #scroll-to-top:hover {
+    background-color: rgba(14, 165, 233, 0.3) !important;
+}
+
+/* ============================================
+   GITHUB ACTIVITY SECTION LIGHT THEME
+   ============================================ */
+
+/* GitHub Activity section stats cards */
+.light-theme #github-activity .stat-card {
+    background: linear-gradient(135deg, rgba(0, 0, 0, 0.03), rgba(0, 0, 0, 0.01)) !important;
+    border-color: rgba(0, 0, 0, 0.1) !important;
+}
+
+/* GitHub Activity featured repos */
+.light-theme #github-activity .bg-white\/5 {
+    background-color: rgba(0, 0, 0, 0.03) !important;
+}
+
+.light-theme #github-activity a.group:hover {
+    border-color: rgba(14, 165, 233, 0.4) !important;
+}
+
+/* GitHub contribution graph background */
+.light-theme #github-activity img {
+    filter: none !important;
+}
+
+/* GitHub Activity section text */
+.light-theme #github-activity h2,
+.light-theme #github-activity h3,
+.light-theme #github-activity h4 {
+    color: #111827 !important;
+}
+
+.light-theme #github-activity .text-gray-300 {
+    color: #4B5563 !important;
+}
+
+/* GitHub stats numbers remain colorful */
+.light-theme #github-activity .text-sky-400 {
+    color: #0284c7 !important;
+}
+
+.light-theme #github-activity .text-green-400 {
+    color: #059669 !important;
+}
+
+.light-theme #github-activity .text-purple-400 {
+    color: #9333ea !important;
+}
+
+.light-theme #github-activity .text-orange-400 {
+    color: #ea580c !important;
+}
+
+/* GitHub Activity CTA buttons in light mode */
+.light-theme #github-activity .bg-gradient-to-r.from-gray-700,
+.light-theme #github-activity .bg-gradient-to-r.from-gray-800 {
+    background: linear-gradient(to right, #374151, #1f2937) !important;
+    color: #ffffff !important;
+}
+
+.light-theme #github-activity .bg-gradient-to-r.from-blue-600 {
+    background: linear-gradient(to right, #2563eb, #1d4ed8) !important;
+    color: #ffffff !important;
+}
+
+/* ============================================
+   HERO SECTION LIGHT THEME
+   ============================================ */
+
+/* Hero text visibility in light mode */
+.light-theme #home h1 {
+    color: #111827 !important;
+}
+
+.light-theme #home p.text-gray-300 {
+    color: #4B5563 !important;
+}
+
+.light-theme #home .text-white {
+    color: #111827 !important;
+}
+
+/* Hero buttons in light mode */
+.light-theme #home .bg-white\/10 {
+    background-color: rgba(0, 0, 0, 0.08) !important;
+    color: #111827 !important;
+    border-color: rgba(0, 0, 0, 0.2) !important;
+}
+
+.light-theme #home .bg-white\/10:hover {
+    background-color: rgba(0, 0, 0, 0.12) !important;
+}
+
+/* ============================================
+   ABOUT SECTION LIGHT THEME
+   ============================================ */
+
+.light-theme #about h3,
+.light-theme #about h4 {
+    color: #111827 !important;
+}
+
+.light-theme #about p {
+    color: #4B5563 !important;
+}
+
+/* ============================================
+   PROJECT BUTTONS LIGHT THEME
+   ============================================ */
+
+/* White button with black text - keep it visible in light mode */
+.light-theme .bg-white.text-black {
+    background-color: #111827 !important;
+    color: #ffffff !important;
+}
+
+.light-theme .bg-white.text-black:hover {
+    background-color: #1f2937 !important;
+}
+
+/* Sky/Cyan gradient buttons remain visible */
+.light-theme .bg-sky-600 {
+    background-color: #0284c7 !important;
+}
+
+.light-theme .bg-sky-600:hover {
+    background-color: #0ea5e9 !important;
+}
+
+/* Featured project card in light mode */
+.light-theme .featured-project-card {
+    background: linear-gradient(to bottom right, #f3f4f6, #e5e7eb) !important;
+}
+
+.light-theme .featured-project-card h3 {
+    color: #111827 !important;
+}
+
+.light-theme .featured-project-card p {
+    color: #4B5563 !important;
+}
+
+/* ============================================
+   DETAIL PAGE LIGHT THEME
+   ============================================ */
+
+.light-theme #detail-page {
+    background-color: #ffffff !important;
+}
+
+.light-theme .detail-page-container h1,
+.light-theme .detail-page-container h2,
+.light-theme .detail-page-container h3,
+.light-theme .detail-page-container h4 {
+    color: #111827 !important;
+}
+
+.light-theme .detail-page-container p,
+.light-theme .detail-page-container li {
+    color: #4B5563 !important;
+}
+
+/* Detail page info boxes */
+.light-theme .detail-page-container .bg-sky-500\/10 {
+    background-color: rgba(14, 165, 233, 0.15) !important;
+}
+
+.light-theme .detail-page-container .bg-indigo-500\/10 {
+    background-color: rgba(99, 102, 241, 0.15) !important;
+}
+
+.light-theme .detail-page-container .bg-yellow-500\/10 {
+    background-color: rgba(234, 179, 8, 0.15) !important;
+}

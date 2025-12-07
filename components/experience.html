@@ -1,30 +1,184 @@
 <!-- Experience Section Component -->
-<section id="experience" class="py-20">
-    <h2 class="text-3xl font-bold text-center text-white mb-12 reveal">Career Journey</h2>
-    <div class="grid md:grid-cols-2 gap-8">
-        <div class="spotlight-card rounded-lg p-6 reveal" onclick="showDetail('experience', 'ambassador')">
-            <p class="text-sm text-sky-400">July 2025 - Present</p>
-            <h3 class="text-xl font-semibold text-white mt-1">Campus Ambassador</h3>
-            <p class="text-gray-400">Repository</p>
-            <p class="mt-2 text-gray-300">Promoting Web3 tools and mentoring students on community engagement.</p>
+<section id="experience" aria-label="Professional Experience" class="py-16 md:py-24">
+    <div class="max-w-6xl mx-auto">
+        <!-- Section Header -->
+        <div class="text-center mb-12 md:mb-16 reveal">
+            <span class="text-sky-400 text-xs md:text-sm font-semibold tracking-wider uppercase">Experience</span>
+            <h2 class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white mt-2">Professional Experience
+            </h2>
+            <p class="text-gray-400 mt-3 md:mt-4 max-w-2xl mx-auto text-sm md:text-base">
+                Leadership roles, hackathon achievements, and hands-on development experience
+            </p>
         </div>
-        <div class="spotlight-card rounded-lg p-6 reveal" style="transition-delay: 0.2s;" onclick="showDetail('experience', 'aptosHackathon')">
-            <p class="text-sm text-sky-400">July 2025</p>
-            <h3 class="text-xl font-semibold text-white mt-1">Hackathon Participant</h3>
-            <p class="text-gray-400">Build on Aptos Kolkata</p>
-            <p class="mt-2 text-gray-300">Built an encrypted decentralized chat application using Aptos Move and React.</p>
+
+        <!-- Experience Cards - Resume Style -->
+        <div class="space-y-6">
+
+            <!-- Campus Ambassador - Current Role -->
+            <div class="experience-card-modern reveal" onclick="showDetail('experience', 'ambassador')">
+                <div class="flex flex-col lg:flex-row lg:items-start gap-4 lg:gap-6">
+                    <div class="flex-shrink-0">
+                        <div
+                            class="w-14 h-14 bg-gradient-to-br from-sky-500 to-indigo-600 rounded-xl flex items-center justify-center shadow-lg shadow-sky-500/20">
+                            <i data-lucide="users" class="w-7 h-7 text-white"></i>
+                        </div>
+                    </div>
+
+                    <div class="flex-1">
+                        <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2 mb-3">
+                            <div>
+                                <h3 class="text-xl font-bold text-white">Campus Ambassador</h3>
+                                <p class="text-sky-400 font-medium">Repository · Part-time</p>
+                            </div>
+                            <div class="flex items-center gap-2">
+                                <span
+                                    class="inline-flex items-center gap-1.5 bg-green-500/10 text-green-400 text-sm font-medium px-3 py-1 rounded-full">
+                                    <span class="w-2 h-2 bg-green-400 rounded-full animate-pulse"></span> Current
+                                </span>
+                                <span class="text-gray-400 text-sm">Dec 2024 - Present</span>
+                            </div>
+                        </div>
+
+                        <p class="text-gray-400 text-sm mb-3">
+                            <i data-lucide="map-pin" class="w-3 h-3 inline mr-1"></i> Bardhaman, West Bengal, India ·
+                            Hybrid
+                        </p>
+
+                        <ul class="space-y-2 text-gray-300 text-sm">
+                            <li class="flex items-start gap-2">
+                                <i data-lucide="chevron-right" class="w-4 h-4 text-sky-400 flex-shrink-0 mt-0.5"></i>
+                                <span>Promoted Web3 developer tools and blockchain education across university
+                                    campus</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <i data-lucide="chevron-right" class="w-4 h-4 text-sky-400 flex-shrink-0 mt-0.5"></i>
+                                <span>Organized hands-on workshops on decentralized applications and smart contract
+                                    development</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <i data-lucide="chevron-right" class="w-4 h-4 text-sky-400 flex-shrink-0 mt-0.5"></i>
+                                <span>Mentored developers on blockchain fundamentals, Move language, and Solidity best
+                                    practices</span>
+                            </li>
+                        </ul>
+
+                        <div class="flex flex-wrap gap-2 mt-4">
+                            <span class="exp-tag">Community Building</span>
+                            <span class="exp-tag">Mentorship</span>
+                            <span class="exp-tag">Web3</span>
+                            <span class="exp-tag">Developer Relations</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="spotlight-card rounded-lg p-6 reveal" onclick="showDetail('experience', 'educhain')">
-            <p class="text-sm text-sky-400">Feb 2025</p>
-            <h3 class="text-xl font-semibold text-white mt-1">Blockchain Enthusiast, Top 5</h3>
-            <p class="text-gray-400">EduChain S3 Kolkata Region</p>
-            <p class="mt-2 text-gray-300">Deployed smart contracts on Ethereum, integrated MetaMask, and used IPFS.</p>
-        </div>
-        <div class="spotlight-card rounded-lg p-6 reveal" style="transition-delay: 0.2s;" onclick="showDetail('experience', 'ieeeHackathon')">
-            <p class="text-sm text-sky-400">Feb 2025</p>
-            <h3 class="text-xl font-semibold text-white mt-1">Hackathon Participant</h3>
-            <p class="text-gray-400">IEEE JU Hackathon Double-Slash 3.0</p>
-            <p class="mt-2 text-gray-300">Developed a real-time bus tracking system using React and Firebase.</p>
+
+        <!-- Hackathons & Competitions Section -->
+        <div class="mt-16">
+            <h3 class="text-xl font-bold text-white mb-6 flex items-center gap-3 reveal">
+                <div class="w-10 h-10 bg-yellow-500/20 rounded-lg flex items-center justify-center">
+                    <i data-lucide="trophy" class="w-5 h-5 text-yellow-400"></i>
+                </div>
+                Hackathons & Competitions
+            </h3>
+
+            <div class="grid md:grid-cols-2 gap-6">
+                <!-- EduChain S3 - Top 5 -->
+                <div class="experience-card-modern reveal" onclick="showDetail('experience', 'educhain')">
+                    <div class="flex items-start gap-4">
+                        <div
+                            class="w-12 h-12 bg-gradient-to-br from-yellow-500 to-orange-600 rounded-xl flex items-center justify-center shadow-lg shadow-yellow-500/20 flex-shrink-0">
+                            <i data-lucide="award" class="w-6 h-6 text-white"></i>
+                        </div>
+                        <div class="flex-1">
+                            <div class="flex items-center gap-2 mb-1">
+                                <span
+                                    class="inline-flex items-center gap-1 bg-yellow-500/10 text-yellow-400 text-xs font-semibold px-2 py-0.5 rounded-full">
+                                    <i data-lucide="medal" class="w-3 h-3"></i> Top 5 Regional
+                                </span>
+                            </div>
+                            <h4 class="text-lg font-bold text-white">EduChain Semester 3</h4>
+                            <p class="text-sky-400 text-sm">Kolkata Region · Feb 2025</p>
+                            <p class="text-gray-300 text-sm mt-2">Built decentralized course booking platform with
+                                Solidity smart contracts on Sepolia testnet, MetaMask integration, and IPFS storage.</p>
+                            <div class="flex flex-wrap gap-1.5 mt-3">
+                                <span class="exp-tag text-xs">Ethereum</span>
+                                <span class="exp-tag text-xs">Solidity</span>
+                                <span class="exp-tag text-xs">IPFS</span>
+                                <span class="exp-tag text-xs">React</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Build on Aptos Kolkata -->
+                <div class="experience-card-modern reveal" style="transition-delay: 0.1s;"
+                    onclick="showDetail('experience', 'aptosHackathon')">
+                    <div class="flex items-start gap-4">
+                        <div
+                            class="w-12 h-12 bg-gradient-to-br from-indigo-500 to-purple-600 rounded-xl flex items-center justify-center shadow-lg shadow-indigo-500/20 flex-shrink-0">
+                            <i data-lucide="blocks" class="w-6 h-6 text-white"></i>
+                        </div>
+                        <div class="flex-1">
+                            <h4 class="text-lg font-bold text-white">Build on Aptos Kolkata</h4>
+                            <p class="text-sky-400 text-sm">Aptos Blockchain Hackathon · Jul 2025</p>
+                            <p class="text-gray-300 text-sm mt-2">Built 'Inbox3' - decentralized encrypted messaging
+                                dApp using Move language with Petra Wallet integration and end-to-end encryption.</p>
+                            <div class="flex flex-wrap gap-1.5 mt-3">
+                                <span class="exp-tag text-xs">Aptos</span>
+                                <span class="exp-tag text-xs">Move</span>
+                                <span class="exp-tag text-xs">TypeScript</span>
+                                <span class="exp-tag text-xs">React</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- IEEE JU Double-Slash 3.0 -->
+                <div class="experience-card-modern reveal" style="transition-delay: 0.2s;"
+                    onclick="showDetail('experience', 'ieeeHackathon')">
+                    <div class="flex items-start gap-4">
+                        <div
+                            class="w-12 h-12 bg-gradient-to-br from-purple-500 to-pink-600 rounded-xl flex items-center justify-center shadow-lg shadow-purple-500/20 flex-shrink-0">
+                            <i data-lucide="code" class="w-6 h-6 text-white"></i>
+                        </div>
+                        <div class="flex-1">
+                            <h4 class="text-lg font-bold text-white">IEEE JU Double-Slash 3.0</h4>
+                            <p class="text-sky-400 text-sm">24-hour Hackathon · Feb 2025</p>
+                            <p class="text-gray-300 text-sm mt-2">Built 'Bus Finder' - real-time bus tracking app with
+                                React, Firebase Realtime Database, and Google Maps API integration.</p>
+                            <div class="flex flex-wrap gap-1.5 mt-3">
+                                <span class="exp-tag text-xs">React</span>
+                                <span class="exp-tag text-xs">Firebase</span>
+                                <span class="exp-tag text-xs">Google Maps</span>
+                                <span class="exp-tag text-xs">Real-time</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Open Source Contributions -->
+                <div class="experience-card-modern reveal" style="transition-delay: 0.3s;">
+                    <div class="flex items-start gap-4">
+                        <div
+                            class="w-12 h-12 bg-gradient-to-br from-green-500 to-emerald-600 rounded-xl flex items-center justify-center shadow-lg shadow-green-500/20 flex-shrink-0">
+                            <i data-lucide="git-branch" class="w-6 h-6 text-white"></i>
+                        </div>
+                        <div class="flex-1">
+                            <h4 class="text-lg font-bold text-white">Open Source Contributor</h4>
+                            <p class="text-sky-400 text-sm">GitHub · Ongoing</p>
+                            <p class="text-gray-300 text-sm mt-2">Active contributor to open-source projects. Building
+                                and maintaining personal projects with focus on Web3 and full-stack development.</p>
+                            <div class="flex flex-wrap gap-1.5 mt-3">
+                                <span class="exp-tag text-xs">Git</span>
+                                <span class="exp-tag text-xs">GitHub</span>
+                                <span class="exp-tag text-xs">Open Source</span>
+                                <span class="exp-tag text-xs">Collaboration</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </section>

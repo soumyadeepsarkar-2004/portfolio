@@ -1,0 +1,37 @@
+<!-- Resume Modal Component -->
+<div id="resume-modal" class="fixed inset-0 z-[60] hidden cursor-auto" role="dialog" aria-modal="true"
+  aria-labelledby="resume-modal-title" data-cursor-hide>
+  <!-- Backdrop -->
+  <div id="resume-backdrop" class="absolute inset-0 bg-black/70 backdrop-blur-sm cursor-auto"></div>
+  <!-- Modal Content -->
+  <div
+    class="relative mx-auto mt-16 w-[95%] max-w-4xl rounded-xl border border-white/10 bg-neutral-900 shadow-2xl cursor-auto">
+    <div class="flex items-center justify-between px-5 py-4 border-b border-white/10">
+      <h3 id="resume-modal-title" class="text-lg md:text-xl font-semibold text-white">Resume - Soumyadeep Sarkar</h3>
+      <button id="resume-close-btn" class="p-2 rounded-md hover:bg-white/10 cursor-pointer" aria-label="Close resume">
+        <i data-lucide="x" class="w-5 h-5"></i>
+      </button>
+    </div>
+    <div class="p-4">
+      <!-- Viewer -->
+      <div class="h-[60vh] md:h-[70vh] rounded-lg overflow-hidden border border-white/10">
+        <iframe id="resume-frame" src="assets/resume/SS_Resume_img.pdf" title="Resume PDF"
+          class="w-full h-full bg-black cursor-auto"></iframe>
+      </div>
+      <!-- Fallback message if file missing -->
+      <div id="resume-fallback" class="mt-4 hidden text-gray-300">
+        <p>Resume file not found. Place your PDF at <code class="text-sky-400">assets/resume/SS_Resume_img.pdf</code>.
+        </p>
+      </div>
+      <!-- Actions -->
+      <div class="mt-4 flex items-center gap-3">
+        <a id="resume-download-btn" href="assets/resume/SS_Resume_img.pdf" download="Soumyadeep_Sarkar_Resume.pdf"
+          class="bg-sky-600 hover:bg-sky-500 text-white px-4 py-2 rounded-md font-medium cursor-pointer">
+          <i data-lucide="download" class="w-4 h-4 inline mr-2"></i>Download Resume
+        </a>
+        <button id="resume-close-btn-2"
+          class="bg-gray-700 hover:bg-gray-600 text-white px-3 py-2 rounded-md cursor-pointer">Close</button>
+      </div>
+    </div>
+  </div>
+</div>

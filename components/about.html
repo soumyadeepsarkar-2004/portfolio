@@ -1,18 +1,184 @@
 <!-- About Section Component -->
-<section id="about" class="py-20 reveal">
-    <div class="grid md:grid-cols-3 gap-12 items-center max-w-5xl mx-auto">
-        <div class="md:col-span-1">
-            <img src="assets/images/profile-avatar.jpg" alt="Soumyadeep Sarkar" class="rounded-full w-48 h-48 md:w-64 md:h-64 mx-auto profile-image object-cover">
+<section id="about" aria-label="About Me" class="py-16 md:py-24 reveal">
+    <div class="max-w-6xl mx-auto">
+        <!-- Section Header -->
+        <div class="text-center mb-10 md:mb-14">
+            <span class="text-sky-400 text-xs md:text-sm font-semibold tracking-wider uppercase">About Me</span>
+            <h2 class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white mt-2">Professional Summary</h2>
         </div>
-        <div class="md:col-span-2 text-center md:text-left">
-            <h2 class="text-3xl md:text-4xl font-bold text-white mb-6">Driven by Curiosity and Code</h2>
-            <div class="text-gray-300 space-y-4">
-                <p>
-                    I'm an Information Technology undergraduate at UIT, Burdwan University (2026), with a strong foundation in computer science, from Data Structures to Blockchain Fundamentals.
-                </p>
-                <p>
-                    My passion lies in the exciting world of blockchain. I have hands-on experience developing dApps on Ethereum, Aptos, and Core DAO. Beyond that, I'm a capable full-stack developer with skills in the MERN stack, always eager to learn and contribute to impactful projects.
-                </p>
+
+        <div class="grid lg:grid-cols-3 gap-8 lg:gap-12 items-start">
+            <!-- Profile Card (Compact) -->
+            <div class="lg:col-span-1">
+                <div class="sticky top-24">
+                    <div class="relative group">
+                        <div
+                            class="absolute -inset-1 bg-gradient-to-r from-sky-500 to-indigo-500 rounded-2xl blur opacity-20 group-hover:opacity-35 transition duration-500">
+                        </div>
+                        <div class="relative bg-[#111] rounded-2xl p-5 border border-white/10">
+                            <img src="assets/images/profile-avatar2.jpg" alt="Soumyadeep Sarkar"
+                                class="rounded-xl w-full aspect-square object-cover mb-4 border-2 border-sky-500/30">
+                            <h3 class="text-xl font-bold text-white">Soumyadeep Sarkar</h3>
+                            <p class="text-sky-400 font-medium text-sm mt-1">Full-Stack Developer</p>
+
+                            <div class="mt-4 space-y-2 text-sm">
+                                <p class="text-gray-400 flex items-center gap-2">
+                                    <i data-lucide="map-pin" class="w-4 h-4 text-gray-500"></i>
+                                    Barrackpore, West Bengal, India
+                                </p>
+                                <p class="text-gray-400 flex items-center gap-2">
+                                    <i data-lucide="mail" class="w-4 h-4 text-gray-500"></i>
+                                    soumyadeepsarkar2004@outlook.com
+                                </p>
+                                <p class="text-gray-400 flex items-center gap-2">
+                                    <i data-lucide="phone" class="w-4 h-4 text-gray-500"></i>
+                                    +91 8240081703
+                                </p>
+                            </div>
+
+                            <!-- Social Links -->
+                            <div class="flex justify-center gap-2 mt-5 pt-5 border-t border-white/10">
+                                <a href="https://www.linkedin.com/in/soumyadeep-sarkar2004/" target="_blank"
+                                    class="p-2.5 bg-white/5 hover:bg-sky-500/20 rounded-lg transition-colors group"
+                                    aria-label="LinkedIn">
+                                    <i data-lucide="linkedin"
+                                        class="w-4 h-4 text-gray-400 group-hover:text-sky-400"></i>
+                                </a>
+                                <a href="https://github.com/soumyadeepsarkar-2004" target="_blank"
+                                    class="p-2.5 bg-white/5 hover:bg-white/20 rounded-lg transition-colors group"
+                                    aria-label="GitHub">
+                                    <i data-lucide="github" class="w-4 h-4 text-gray-400 group-hover:text-white"></i>
+                                </a>
+                                <a href="https://x.com/sarkar58153" target="_blank"
+                                    class="p-2.5 bg-white/5 hover:bg-white/20 rounded-lg transition-colors group"
+                                    aria-label="Twitter/X">
+                                    <i data-lucide="twitter" class="w-4 h-4 text-gray-400 group-hover:text-white"></i>
+                                </a>
+                                <a href="https://medium.com/@SoumyadeepSarkar" target="_blank"
+                                    class="p-2.5 bg-white/5 hover:bg-white/20 rounded-lg transition-colors group"
+                                    aria-label="Medium">
+                                    <i data-lucide="book-open" class="w-4 h-4 text-gray-400 group-hover:text-white"></i>
+                                </a>
+                                <a href="https://dev.to/soumyadeep_sarkar" target="_blank"
+                                    class="p-2.5 bg-white/5 hover:bg-white/20 rounded-lg transition-colors group"
+                                    aria-label="Dev.to">
+                                    <i data-lucide="code" class="w-4 h-4 text-gray-400 group-hover:text-white"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Professional Summary Content -->
+            <div class="lg:col-span-2 space-y-6">
+                <!-- Summary Statement -->
+                <div class="bg-gradient-to-br from-sky-500/5 to-indigo-500/5 rounded-xl p-6 border border-sky-500/10">
+                    <p class="text-lg md:text-xl text-gray-200 leading-relaxed">
+                        <span class="text-white font-semibold">Aspiring Full-Stack Developer</span> with hands-on
+                        experience
+                        in <span class="text-sky-400">TypeScript</span>, <span class="text-sky-400">React</span>,
+                        <span class="text-green-400">Node.js</span>, <span class="text-green-400">Python</span>, and
+                        <span class="text-purple-400">Web3 technologies</span>.
+                    </p>
+                    <p class="text-gray-300 leading-relaxed mt-4">
+                        Skilled in building scalable web applications and decentralized platforms, with a strong
+                        foundation
+                        in frontend development, backend APIs, and smart contract integration. Passionate about clean
+                        code,
+                        user-focused design, and continuously learning new technologies. Eager to contribute to
+                        innovative
+                        projects and grow within a collaborative development team.
+                    </p>
+                </div>
+
+                <!-- Core Competencies -->
+                <div>
+                    <h4 class="text-lg font-semibold text-white mb-4 flex items-center gap-2">
+                        <i data-lucide="target" class="w-5 h-5 text-sky-400"></i> Core Competencies
+                    </h4>
+                    <div class="grid sm:grid-cols-2 gap-3">
+                        <div class="flex items-center gap-3 bg-[#111] rounded-lg p-3 border border-white/5">
+                            <div class="w-2 h-2 bg-sky-400 rounded-full"></div>
+                            <span class="text-gray-300 text-sm">Full-Stack Web Development (React, Node.js,
+                                FastAPI)</span>
+                        </div>
+                        <div class="flex items-center gap-3 bg-[#111] rounded-lg p-3 border border-white/5">
+                            <div class="w-2 h-2 bg-green-400 rounded-full"></div>
+                            <span class="text-gray-300 text-sm">RESTful API Design & Backend Development</span>
+                        </div>
+                        <div class="flex items-center gap-3 bg-[#111] rounded-lg p-3 border border-white/5">
+                            <div class="w-2 h-2 bg-purple-400 rounded-full"></div>
+                            <span class="text-gray-300 text-sm">Blockchain & Smart Contracts (Solidity, Move)</span>
+                        </div>
+                        <div class="flex items-center gap-3 bg-[#111] rounded-lg p-3 border border-white/5">
+                            <div class="w-2 h-2 bg-orange-400 rounded-full"></div>
+                            <span class="text-gray-300 text-sm">Database Management (PostgreSQL, MongoDB,
+                                Firebase)</span>
+                        </div>
+                        <div class="flex items-center gap-3 bg-[#111] rounded-lg p-3 border border-white/5">
+                            <div class="w-2 h-2 bg-yellow-400 rounded-full"></div>
+                            <span class="text-gray-300 text-sm">Wallet Integration (MetaMask, Petra,
+                                WalletConnect)</span>
+                        </div>
+                        <div class="flex items-center gap-3 bg-[#111] rounded-lg p-3 border border-white/5">
+                            <div class="w-2 h-2 bg-pink-400 rounded-full"></div>
+                            <span class="text-gray-300 text-sm">DevOps & Deployment (Git, Docker, Vercel)</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Key Highlights -->
+                <div class="bg-[#111] rounded-xl p-5 border border-white/10">
+                    <h4 class="text-lg font-semibold text-white mb-4 flex items-center gap-2">
+                        <i data-lucide="trophy" class="w-5 h-5 text-yellow-400"></i> Key Projects & Achievements
+                    </h4>
+                    <ul class="space-y-3">
+                        <li class="flex items-start gap-3">
+                            <i data-lucide="check-circle" class="w-5 h-5 text-green-400 mt-0.5 flex-shrink-0"></i>
+                            <span class="text-gray-300 text-sm"><span class="text-white font-medium">EchoDAO</span> -
+                                Full-stack governance platform with React, FastAPI, Solidity on Celo + AI
+                                verification</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <i data-lucide="check-circle" class="w-5 h-5 text-green-400 mt-0.5 flex-shrink-0"></i>
+                            <span class="text-gray-300 text-sm"><span class="text-white font-medium">Blockchain
+                                    Tutor</span> - Web3 education platform with AI chat, wallet connectivity & course
+                                management</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <i data-lucide="check-circle" class="w-5 h-5 text-green-400 mt-0.5 flex-shrink-0"></i>
+                            <span class="text-gray-300 text-sm"><span class="text-white font-medium">Inbox3</span> -
+                                Decentralized encrypted messaging on Aptos blockchain with Petra Wallet
+                                integration</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <i data-lucide="check-circle" class="w-5 h-5 text-green-400 mt-0.5 flex-shrink-0"></i>
+                            <span class="text-gray-300 text-sm"><span class="text-white font-medium">Top 5
+                                    Regional</span> at EduChain S3 Kolkata Blockchain Competition</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Quick Stats -->
+                <div class="grid grid-cols-2 sm:grid-cols-4 gap-4">
+                    <div class="bg-[#111] rounded-xl p-4 border border-white/10 text-center">
+                        <div class="text-2xl md:text-3xl font-bold text-sky-400">10+</div>
+                        <div class="text-xs text-gray-400 mt-1">Major Projects</div>
+                    </div>
+                    <div class="bg-[#111] rounded-xl p-4 border border-white/10 text-center">
+                        <div class="text-2xl md:text-3xl font-bold text-green-400">6+</div>
+                        <div class="text-xs text-gray-400 mt-1">Hackathons</div>
+                    </div>
+                    <div class="bg-[#111] rounded-xl p-4 border border-white/10 text-center">
+                        <div class="text-2xl md:text-3xl font-bold text-purple-400">Top 5</div>
+                        <div class="text-xs text-gray-400 mt-1">EduChain Regional</div>
+                    </div>
+                    <div class="bg-[#111] rounded-xl p-4 border border-white/10 text-center">
+                        <div class="text-2xl md:text-3xl font-bold text-orange-400">3+</div>
+                        <div class="text-xs text-gray-400 mt-1">Blockchains</div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
