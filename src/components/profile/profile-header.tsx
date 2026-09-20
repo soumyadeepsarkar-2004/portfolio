@@ -74,7 +74,7 @@ export function ProfileHeader() {
         </div>
         <div className="mx-2 my-2 flex flex-col items-end sm:justify-end">
           {/* Social icons */}
-          <div className="border-edge group relative grid w-full cursor-pointer grid-cols-3 rounded-sm sm:w-auto sm:gap-x-8 sm:py-1">
+          <div className="border-edge group relative grid w-full cursor-pointer grid-cols-4 rounded-sm sm:w-auto sm:gap-x-8 sm:py-1">
             {USER.socials.map((item) => {
               return (
                 <Tooltip key={item.name}>

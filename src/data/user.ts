@@ -30,7 +30,7 @@ export const USER = {
     {
       name: "YouTube",
       href: "https://www.youtube.com/@shann-tech",
-      icon: "/assets/youtube.webp", // Assuming this exists or I will just use standard icon
+      icon: "/assets/youtube.svg",
       username: "@shann-tech",
     }
   ],
