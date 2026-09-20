@@ -1,7 +1,7 @@
 export type Experience = {
   company: string
   title: string
-  type: "Full-time" | "Internship"
+  type: "Full-time" | "Internship" | "Trainee" | "Lead"
   logo: string | null
   from: Date
   to: Date | null
@@ -12,60 +12,68 @@ export type Experience = {
 
 export const EXPERIENCE: Experience[] = [
   {
-    title: "Software Developer Engineer",
-    company: "HexaCluster",
+    title: "Full Stack Intern",
+    company: "ApexPlanet Software Pvt Ltd",
     logo: null,
     isExpanded: true,
     descriptionList: [
-      "Built custom UI components and extended shadcn/ui primitives to meet specific product requirements",
-      "Ensured high code quality using ESLint, Prettier, and Husky as part of the development workflow",
-      "Developed responsive, accessible web applications using React, TypeScript, and Tailwind CSS",
-      "Built and maintained a production-grade Next.js application",
-      "Created scalable server-side applications in TypeScript using Node.js",
-      "Implemented Micro Frontend architecture for modular and independently deployable frontend features",
-      "Worked on Golang micro-services backend",
-      "Worked on Data Migration Tool with spring boot & spring batch",
+      "Built scalable backend systems and REST APIs.",
     ],
-    from: new Date("2024-08-01"),
+    from: new Date("2025-10-01"),
     to: null,
-    type: "Full-time",
-    skills: [
-      "React",
-      "Next.js",
-      "Tailwind CSS",
-      "TypeScript",
-      "Golang",
-      "Framer-Motion",
-    ],
+    type: "Internship",
+    skills: ["React", "Node.js", "Express", "MongoDB"],
   },
   {
-    title: "UI/UX Developer Intern",
-    company: "HexaCluster",
+    title: "Full Stack Trainee",
+    company: "Pantech Solutions Pvt. Ltd.",
     logo: null,
     isExpanded: false,
     descriptionList: [
-      "Designed and developed pixel-perfect web interfaces with a focus on user experience and responsiveness",
-      "Implemented a Retrieval-Augmented Generation (RAG) based chatbot using TypeScript",
-      "Applied Server-Side Rendering (SSR) and Static Site Generation (SSG) in Next.js to enhance SEO and improve page load performance",
+      "Full-stack development training and mentorship.",
     ],
-    from: new Date("2024-01-01"),
-    to: new Date("2024-07-30"),
-    type: "Internship",
-    skills: ["React", "Next.js", "Tailwind CSS", "TypeScript", "Framer-Motion"],
+    from: new Date("2025-09-01"),
+    to: null,
+    type: "Trainee",
+    skills: ["React", "Node.js", "Web Development"],
   },
   {
-    title: "Next.js Developer Intern",
-    company: "CosEdge",
+    title: "Web Development Intern",
+    company: "Shadowfox Technologies",
     logo: null,
     isExpanded: false,
     descriptionList: [
-      "Developed pixel-perfect websites following modern UI/UX design practices",
-      "Styled applications using Tailwind CSS for utility-first, responsive design",
-      "Built dynamic web applications using Next.js and React",
+      "Developed responsive web applications.",
     ],
-    from: new Date("2023-05-01"),
-    to: new Date("2023-06-30"),
+    from: new Date("2025-09-01"),
+    to: new Date("2025-10-31"),
     type: "Internship",
-    skills: ["React", "Next.js", "Tailwind CSS", "TypeScript"],
+    skills: ["React", "Next.js", "Tailwind CSS"],
   },
+  {
+    title: "Data Analytics Intern",
+    company: "Cognifyz Technologies",
+    logo: null,
+    isExpanded: false,
+    descriptionList: [
+      "Performed data analysis and visualization.",
+    ],
+    from: new Date("2024-05-01"),
+    to: new Date("2024-08-31"),
+    type: "Internship",
+    skills: ["Data Analysis", "Python", "Visualization"],
+  },
+  {
+    title: "Event & Operations Lead",
+    company: "GFG Campus body UIT",
+    logo: null,
+    isExpanded: false,
+    descriptionList: [
+      "Leading events and community operations.",
+    ],
+    from: new Date("2023-01-01"), // using a placeholder date as "Ongoing"
+    to: null,
+    type: "Lead",
+    skills: ["Leadership", "Community Building"],
+  }
 ]

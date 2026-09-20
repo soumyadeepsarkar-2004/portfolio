@@ -17,7 +17,7 @@ import { cn } from "@/lib/utils"
 
 const pageMetadata = {
   title: "Components",
-  description: "Explore the collection of reusable components by Uday",
+  description: "Explore the collection of reusable components by Soumyadeep",
 }
 
 const generatedStaticMetadata = generateMetaData(
@@ -121,3 +121,4 @@ const Page = () => {
 }
 
 export default Page
+

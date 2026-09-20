@@ -43,12 +43,13 @@ export function NPXHolder() {
               }}
               duration={1.2}
             >
-              npx udaykiran
+              npx soumyadeep
             </TextRoll>
-            <CopyCode code={"npx udaykiran"} position="relative" />
+            <CopyCode code={"npx soumyadeep"} position="relative" />
           </div>
         </div>
       </div>
     </div>
   )
 }
+

@@ -13,18 +13,6 @@ export const TECH_STACK: TechStack[] = [
     title: "JavaScript",
   },
   {
-    key: "golang",
-    title: "GoLang",
-  },
-  {
-    key: "java",
-    title: "Java",
-  },
-  {
-    key: "nodejs",
-    title: "Node.js",
-  },
-  {
     key: "react",
     title: "React",
   },
@@ -34,26 +22,24 @@ export const TECH_STACK: TechStack[] = [
     theme: true,
   },
   {
+    key: "nodejs",
+    title: "Node.js",
+  },
+  {
+    key: "mongodb",
+    title: "MongoDB",
+  },
+  {
     key: "tailwindcss",
     title: "Tailwind CSS",
   },
   {
-    key: "shadcn-ui",
-    title: "shadcn/ui",
-    theme: true,
+    key: "python",
+    title: "Python",
   },
   {
-    key: "motion",
-    title: "Motion",
-  },
-  {
-    key: "redux",
-    title: "Redux",
-  },
-  {
-    key: "react-router",
-    title: "React Router",
-    theme: true,
+    key: "java",
+    title: "Java",
   },
   {
     key: "git",
@@ -64,7 +50,15 @@ export const TECH_STACK: TechStack[] = [
     title: "Docker",
   },
   {
-    key: "figma",
-    title: "Figma",
+    key: "solidity",
+    title: "Solidity",
   },
+  {
+    key: "ipfs",
+    title: "IPFS",
+  },
+  {
+    key: "motion",
+    title: "Framer Motion",
+  }
 ]

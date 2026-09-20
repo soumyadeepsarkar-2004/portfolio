@@ -1,8 +1,8 @@
-# 🧩 udaykiran.dev — Portfolio + Component Registry
+# 🧩 soumyadeep-dev.vercel.app — Portfolio + Component Registry
 
 A collection of **modern, reusable, and production-ready UI components** built with **Next.js**, **React**, **TypeScript**, and **Tailwind CSS**.
 
-This repository powers my personal portfolio — [**udaykiran.dev**](https://udaykiran.dev) — and serves as a **component registry** for developers who value clean design, accessibility, and performance.
+This repository powers my personal portfolio — [**soumyadeep-dev.vercel.app**](https://soumyadeep-dev.vercel.app) — and serves as a **component registry** for developers who value clean design, accessibility, and performance.
 
 ---
 
@@ -28,3 +28,4 @@ This repository powers my personal portfolio — [**udaykiran.dev**](https://uda
 - **Linting & Formatting:** ESLint, Prettier, Husky
 
 ---
+

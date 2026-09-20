@@ -7,7 +7,7 @@ export async function GET(request: Request) {
   try {
     const { searchParams } = new URL(request.url)
     const title = searchParams.get("title") || USER.name
-    const description = searchParams.get("description") || "Hi, I'm Uday"
+    const description = searchParams.get("description") || "Hi, I'm Soumyadeep"
 
     return new ImageResponse(
       (
@@ -125,3 +125,4 @@ export async function GET(request: Request) {
     return new Response("Failed to generate image", { status: 500 })
   }
 }
+

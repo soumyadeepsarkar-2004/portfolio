@@ -1,7 +1,7 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry.json",
-  "name": "udaykiran.dev",
-  "homepage": "https://udaykiran.dev",
+  "name": "soumyadeep-dev.vercel.app",
+  "homepage": "https://soumyadeep-dev.vercel.app",
   "items": [
     {
       "name": "command",
@@ -80,3 +80,4 @@
     }
   ]
 }
+

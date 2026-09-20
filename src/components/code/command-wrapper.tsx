@@ -12,9 +12,9 @@ export function CommandWrapper({ componentName }: CommandWrapperProps) {
   if (!component) return null
 
   const commands = {
-    npm: `npx shadcn@latest add https://udaykiran.dev/r/${componentName}.json`,
-    yarn: `yarn shadcn@latest add https://udaykiran.dev/r/${componentName}.json`,
-    pnpm: `pnpm dlx shadcn@latest add https://udaykiran.dev/r/${componentName}.json`,
+    npm: `npx shadcn@latest add https://soumyadeep-dev.vercel.app/r/${componentName}.json`,
+    yarn: `yarn shadcn@latest add https://soumyadeep-dev.vercel.app/r/${componentName}.json`,
+    pnpm: `pnpm dlx shadcn@latest add https://soumyadeep-dev.vercel.app/r/${componentName}.json`,
   }
 
   return (
@@ -23,3 +23,4 @@ export function CommandWrapper({ componentName }: CommandWrapperProps) {
     </div>
   )
 }
+

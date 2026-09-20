@@ -1,4 +1,4 @@
-# udaykiran.dev — Project Analysis & Improvement Report
+# soumyadeep-dev.vercel.app — Project Analysis & Improvement Report
 
 > **Generated:** June 9, 2026
 > **Project:** Personal portfolio + Component registry
@@ -23,7 +23,7 @@
 ## 1. Project Structure
 
 ```
-udaykiran.dev/
+soumyadeep-dev.vercel.app/
 ├── public/
 │   ├── assets/
 │   │   ├── company/          # Company logos
@@ -179,3 +179,4 @@ The design system is **consistent but minimal**. It follows the shadcn/ui conven
 - **`cn()` utility** — used universally for class merging
 - **`import type`** — used where appropriate
 - **No default exports in components** — with one exception
+

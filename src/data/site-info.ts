@@ -1,41 +1,29 @@
 import { USER } from "./user"
 
 export const SITE_INFO = {
-  siteName: "UdayKiran | SDE | Portfolio",
-  url: "https://udaykiran.dev",
-  name: "Uday Kiran",
+  siteName: "Soumyadeep | Developer | Portfolio",
+  url: "https://soumyadeep-dev.vercel.app",
+  name: "Soumyadeep Sarkar",
   description:
-    "Explore the portfolio of Udaykiran, a skilled Software Developer specializing in modern web technologies like React, Next.js, TypeScript and GoLang.",
+    "Explore the portfolio of Soumyadeep Sarkar, a Full Stack Developer specializing in modern web technologies.",
   ogImage: "/assets/seo-image.png",
   keywords: [
-    "shadcn",
-    "UI/UX",
-    "design",
     "portfolio",
-    "magicui",
-    "aceternity",
-    "framer-motion",
-    "motion",
     "dev",
-    "3d portfolio",
-    "minimal",
-    "Uday Kiran",
-    "Uday Kiran Bandarugalla",
-    "Uday Kiran SDE",
+    "Soumyadeep Sarkar",
+    "Full Stack Developer",
   ],
   authors: [
     {
       name: USER.fullName,
-      url: "https://udaykiran.dev",
+      url: "https://soumyadeep-dev.vercel.app",
     },
   ],
 }
 
 export const TEXT_TO_ANIMATE = [
-  "I'm Uday Kiran",
-  "I'm a Software Engineer",
-  "Hire me, I use Next.js!",
-  "Hire me, I use Zustand!",
-  "Hire me, I use TailwindCSS!",
-  "Hire me, I use TypeScript!",
+  "I'm Soumyadeep Sarkar",
+  "I'm a Full Stack Developer",
+  "I'm a Web3 Developer",
+  "Hire me!",
 ]

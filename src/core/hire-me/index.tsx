@@ -58,7 +58,7 @@ export const HireMe = ({ text, avatarSrc, className }: HireMeProps) => {
       </div>
       <Image
         src={avatarSrc}
-        alt="Uday Kiran"
+        alt="Soumyadeep Sarkar"
         width={48}
         height={48}
         className={cn(
@@ -68,3 +68,4 @@ export const HireMe = ({ text, avatarSrc, className }: HireMeProps) => {
     </motion.div>
   )
 }
+

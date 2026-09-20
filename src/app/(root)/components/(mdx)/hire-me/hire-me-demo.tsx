@@ -4,7 +4,7 @@ import { HireMe } from "@/core/hire-me"
 import { USER } from "@/data"
 
 const TEXT_TO_ANIMATE = [
-  "I'm Uday Kiran",
+  "I'm Soumyadeep Sarkar",
   "I'm a Software Engineer",
   "Hire me, I use Next.js!",
   "Hire me, I use Zustand!",
@@ -22,3 +22,4 @@ export const HireMeDemo = () => {
     </div>
   )
 }
+

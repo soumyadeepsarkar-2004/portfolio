@@ -7,7 +7,7 @@ export function About() {
       <HeaderTitle title="About" />
       <div className="space-y-2 p-2">
         <p className="text-primary/90 text-base">
-          I&apos;m Udaykiran, a Software Developer at{" "}
+          I&apos;m soumyadeep, a Software Developer at{" "}
           <Button
             asChild
             className="h-0 cursor-pointer p-0 underline"
@@ -59,3 +59,4 @@ export function About() {
     </section>
   )
 }
+
