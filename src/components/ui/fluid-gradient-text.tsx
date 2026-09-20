@@ -1,79 +1,91 @@
-"use client";
+"use client"
 
-import React, { useRef, useState, useEffect } from "react";
-import { cn } from "@/lib/utils";
+import { motion, useMotionValue, useSpring, useTransform } from "motion/react"
+import React from "react"
 
-interface FluidGradientTextProps extends React.HTMLAttributes<HTMLSpanElement> {
-  text: string;
-  colors?: string[];
-  animate?: boolean;
+export type FluidGradientTextProps = {
+  /** Text content rendered inside the SVG. */
+  text: string
+  /**
+   * SVG viewBox width used to scale the gradient and text layout.
+   * @default 1200
+   * */
+  svgViewBoxWidth?: number
+  /**
+   * SVG viewBox height used as the base text size.
+   * @default 300
+   * */
+  svgViewBoxHeight?: number
 }
 
 export function FluidGradientText({
   text,
-  colors = [
-    "#ffaa40",
-    "#9c40ff",
-    "#ffaa40",
-  ],
-  animate = true,
-  className,
-  ...props
+  svgViewBoxWidth = 1200,
+  svgViewBoxHeight = 300,
 }: FluidGradientTextProps) {
-  const containerRef = useRef<HTMLSpanElement>(null);
-  const [mousePosition, setMousePosition] = useState({ x: 50, y: 50 });
-  const [isHovering, setIsHovering] = useState(false);
-
-  useEffect(() => {
-    const handleMouseMove = (e: MouseEvent) => {
-      if (!containerRef.current) return;
-      const rect = containerRef.current.getBoundingClientRect();
-      // Calculate mouse position relative to the element, constrained to 0-100%
-      const x = Math.max(0, Math.min(100, ((e.clientX - rect.left) / rect.width) * 100));
-      const y = Math.max(0, Math.min(100, ((e.clientY - rect.top) / rect.height) * 100));
-      setMousePosition({ x, y });
-    };
-
-    if (isHovering) {
-      window.addEventListener("mousemove", handleMouseMove);
-    } else {
-      setMousePosition({ x: 50, y: 50 });
+  const gradientX1Raw = useMotionValue(0.5)
+  const gradientX1 = useSpring(
+    useTransform(gradientX1Raw, [0, 1], [0, svgViewBoxWidth]),
+    {
+      stiffness: 150,
+      damping: 25,
     }
+  )
 
-    return () => {
-      window.removeEventListener("mousemove", handleMouseMove);
-    };
-  }, [isHovering]);
+  const handleMouseMove = (event: React.MouseEvent<HTMLDivElement>) => {
+    const containerRect = event.currentTarget.getBoundingClientRect()
+    gradientX1Raw.set(
+      (event.clientX - containerRect.left) / containerRect.width
+    )
+  }
+
+  const handleMouseLeave = () => {
+    gradientX1Raw.set(0.5)
+  }
 
   return (
-    <span
-      ref={containerRef}
-      onMouseEnter={() => setIsHovering(true)}
-      onMouseLeave={() => setIsHovering(false)}
-      className={cn(
-        "relative inline-block text-transparent bg-clip-text font-bold",
-        className
-      )}
-      style={{
-        backgroundImage: `radial-gradient(circle at ${mousePosition.x}% ${mousePosition.y}%, ${colors.join(', ')})`,
-        transition: "background-position 0.2s ease",
-        backgroundSize: animate ? "200% 200%" : "100% 100%",
-        WebkitBackgroundClip: "text",
-        WebkitTextFillColor: "transparent",
-        animation: animate ? (isHovering ? "none" : "fluid-gradient-pulse 4s ease-in-out infinite alternate") : "none",
-      }}
-      {...props}
+    <div
+      className="relative size-full overflow-hidden"
+      onMouseMove={handleMouseMove}
+      onMouseLeave={handleMouseLeave}
     >
-      {text}
-      <style dangerouslySetInnerHTML={{
-        __html: `
-          @keyframes fluid-gradient-pulse {
-            0% { background-position: 0% 50%; }
-            50% { background-position: 100% 50%; }
-            100% { background-position: 0% 50%; }
-          }
-        `
-      }} />
-    </span>
-  );
+      <svg
+        className="size-full select-none"
+        viewBox={`0 0 ${svgViewBoxWidth} ${svgViewBoxHeight}`}
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <text
+          x="50%"
+          y="50%"
+          textAnchor="middle"
+          dominantBaseline="central"
+          stroke="currentColor"
+          strokeOpacity="0.1"
+          strokeWidth="2"
+          fill="url(#fluid_gradient_text_linear)"
+          style={{
+            fontFamily: "Helvetica, sans-serif",
+            fontSize: svgViewBoxHeight,
+            fontWeight: "bold",
+          }}
+        >
+          {text}
+        </text>
+        <defs>
+          <motion.linearGradient
+            id="fluid_gradient_text_linear"
+            x1={gradientX1}
+            y1="0"
+            x2={svgViewBoxWidth / 2}
+            y2={svgViewBoxHeight}
+            gradientUnits="userSpaceOnUse"
+          >
+            <stop offset="0.625" stopColor="currentColor" stopOpacity="0" />
+            <stop offset="1" stopColor="currentColor" />
+          </motion.linearGradient>
+        </defs>
+      </svg>
+    </div>
+  )
 }

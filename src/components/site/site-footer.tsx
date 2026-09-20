@@ -2,11 +2,12 @@ import { USER } from "@/data"
 import Link from "next/link"
 import { Button } from "../ui/button"
 import { ContainerWrapper } from "./container"
+import { FluidGradientText } from "../ui/fluid-gradient-text"
 
 export function SiteFooter() {
   return (
     <footer className="border-edge w-full border-b-[1px]">
-      <ContainerWrapper className="relative">
+      <ContainerWrapper className="relative flex flex-col gap-4 py-8">
         <div className="py-0">
           <div className="text-muted-foreground flex flex-wrap items-center justify-center gap-x-1 text-center font-mono text-xs text-balance sm:px-4">
             Inspired by{" "}
@@ -54,6 +55,11 @@ export function SiteFooter() {
               </a>
             </Button>
           </h3>
+        </div>
+        <div className="flex w-full items-center justify-center pt-8">
+          <div className="h-32 w-full max-w-3xl">
+            <FluidGradientText text="soumyadeep" />
+          </div>
         </div>
       </ContainerWrapper>
     </footer>

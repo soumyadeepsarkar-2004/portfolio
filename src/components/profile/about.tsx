@@ -1,6 +1,5 @@
 import { Button } from "@/components/ui/button"
 import { HeaderTitle } from "./header-title"
-import { FluidGradientText } from "@/components/ui/fluid-gradient-text"
 
 export function About() {
   return (
@@ -8,7 +7,7 @@ export function About() {
       <HeaderTitle title="About" />
       <div className="space-y-2 p-2">
         <p className="text-primary/90 text-base">
-          I&apos;m <FluidGradientText text="soumyadeep" className="text-xl px-1" />, a Full Stack &amp; Web3 Developer based in{" "}
+          I&apos;m <strong>Soumyadeep Sarkar</strong>, a Full Stack &amp; Web3 Developer based in{" "}
           <Button
             asChild
             className="h-0 cursor-pointer p-0 underline"
