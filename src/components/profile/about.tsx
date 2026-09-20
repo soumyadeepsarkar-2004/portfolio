@@ -7,56 +7,47 @@ export function About() {
       <HeaderTitle title="About" />
       <div className="space-y-2 p-2">
         <p className="text-primary/90 text-base">
-          I&apos;m soumyadeep, a Software Developer at{" "}
+          I&apos;m <strong>Soumyadeep Sarkar</strong>, a Full Stack &amp; Web3 Developer based in{" "}
           <Button
             asChild
             className="h-0 cursor-pointer p-0 underline"
             variant="link"
           >
-            <a href="https://hexacluster.ai/" target="_blank">
-              HexaCluster
+            <a href="https://maps.google.com/?q=Barrackpore,India" target="_blank">
+              Barrackpore, India
             </a>
           </Button>
-          , with 1.5+ years of experience building high-quality web applications
-          using Next.js, React, and TypeScript.
+          . I specialize in building scalable, production-ready web applications using
+          Next.js, React, TypeScript, and Node.js.
         </p>
         <p className="text-primary/90 text-base">
-          I also work on scalable backend services using Node.js, Spring Boot,
-          and Golang, focusing on microservices architecture.
-        </p>
-        <p className="text-primary/90 text-base">
-          I&apos;ve worked with{" "}
+          I have hands-on experience with blockchain and Web3 technologies — from Solidity smart contracts
+          to IPFS storage and Celo-based dApps. I&apos;m also a{" "}
           <Button
             asChild
             className="h-0 cursor-pointer p-0 underline"
             variant="link"
           >
-            <a
-              href="https://micro-frontends.org/"
-              className="text-base"
-              target="_blank"
-            >
-              micro-frontends
+            <a href="https://gssoc.girlscript.tech/" target="_blank">
+              GSSoC&apos;25
             </a>
           </Button>{" "}
-          and{" "}
+          Project Admin &amp; Mentor, and a hackathon winner (HackOdisha&apos;25, EduChain Kolkata Top 5).
+        </p>
+        <p className="text-primary/90 text-base">
+          Currently pursuing B.E. in IT at{" "}
           <Button
             asChild
             className="h-0 cursor-pointer p-0 underline"
             variant="link"
           >
-            <a
-              href="https://microservices.io/"
-              className="text-base"
-              target="_blank"
-            >
-              microservices
+            <a href="https://www.burdwanuniversity.ac.in/" target="_blank">
+              University Institute of Technology, B.U.
             </a>
           </Button>
-          , building modular, scalable applications end-to-end.
+          {" "}(Expected June 2026), and actively working on full-stack &amp; Web3 projects.
         </p>
       </div>
     </section>
   )
 }
-

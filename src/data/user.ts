@@ -1,7 +1,7 @@
 export const USER = {
   name: "SOUMYADEEP SARKAR",
   email: "soumyadeepsarkar2004@outlook.com",
-  avatar: "https://github.com/soumyadeepsarkar-2004.png", // using github avatar
+  avatar: "/assets/avatar.png",
   firstName: "Soumyadeep",
   lastName: "Sarkar",
   fullName: "Soumyadeep Sarkar",
