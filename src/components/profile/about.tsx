@@ -18,7 +18,7 @@ export function About() {
             </a>
           </Button>
           . I specialize in building scalable, production-ready web applications using
-          Next.js, React, TypeScript, and Node.js.
+          Next.js, React, TypeScript, and Node.js. As a backend-focused developer, I enjoy building practical products with clean architecture and scalable APIs.
         </p>
         <p className="text-primary/90 text-base">
           I have hands-on experience with blockchain and Web3 technologies — from Solidity smart contracts
@@ -41,7 +41,7 @@ export function About() {
             className="h-0 cursor-pointer p-0 underline"
             variant="link"
           >
-            <a href="https://www.burdwanuniversity.ac.in/" target="_blank">
+            <a href="https://uit.buruniv.ac.in/" target="_blank">
               University Institute of Technology, B.U.
             </a>
           </Button>

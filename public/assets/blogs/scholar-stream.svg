@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <rect width="1200" height="630" fill="#09090b"/>
+  <defs>
+    <linearGradient id="g5" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0284c7" stop-opacity="0.25"/>
+      <stop offset="100%" stop-color="#0369a1" stop-opacity="0.05"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#g5)"/>
+  <text x="600" y="270" fill="#ffffff" font-family="system-ui, sans-serif" font-size="44" font-weight="800" text-anchor="middle">The Scholar and the Stream</text>
+  <text x="600" y="330" fill="#a1a1aa" font-family="monospace" font-size="22" text-anchor="middle">Software Engineering Philosophy • Practical Craftsmanship</text>
+  <rect x="480" y="380" width="240" height="42" rx="8" fill="#0284c7" opacity="0.2" stroke="#0284c7"/>
+  <text x="600" y="407" fill="#38bdf8" font-family="monospace" font-size="16" font-weight="600" text-anchor="middle">Engineering Philosophy</text>
+</svg>

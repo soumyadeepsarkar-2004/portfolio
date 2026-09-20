@@ -1,31 +1,55 @@
-# 🧩 soumyadeep-dev.vercel.app — Portfolio + Component Registry
+# ⚡ Soumyadeep Sarkar — Personal Portfolio
 
-A collection of **modern, reusable, and production-ready UI components** built with **Next.js**, **React**, **TypeScript**, and **Tailwind CSS**.
+Live Demo: [**soumyadeep-dev.vercel.app**](https://soumyadeep-dev.vercel.app) (Subdomain PR pending: [soumyadeepsarkar.is-a.dev](https://github.com/is-a-dev/register/pull/53245))
 
-This repository powers my personal portfolio — [**soumyadeep-dev.vercel.app**](https://soumyadeep-dev.vercel.app) — and serves as a **component registry** for developers who value clean design, accessibility, and performance.
-
----
-
-## 🚀 Features
-
-- 🧱 **Reusable Components** — Modular, composable components for faster UI development
-- 🎨 **Clean & Modern Design** — Consistent design system inspired by _shadcn/ui_
-- 🌗 **Light & Dark Theme Support** — Smooth theme transitions
-- ⚙️ **TypeScript-First** — Strong typing for scalability and maintainability
-- 🧩 **Component Registry** — Easy-to-browse collection of animations and UI primitives
-- 🧑‍💻 **Developer Experience** — ESLint, Prettier, and Husky integrated
-- ⚡ **Performance-Oriented** — Built with Next.js for SSR, SSG
+Welcome to the official repository for my personal portfolio. Built with modern web technologies, this site showcases my **Full Stack & Web3** projects, technical experience, open-source mentorship, and software engineering articles.
 
 ---
 
-## 📁 Tech Stack
+## 🌟 Highlights
 
-- **Framework:** Next.js 15
+- **Modern Tech Stack**: Next.js 15, React 19, TypeScript, and Tailwind CSS.
+- **Dynamic OpenGraph Previews**: Custom `/og` edge route for dynamic social link cards.
+- **Projects Showcase**: Interactive desktop web app mockups for Web3, AI, and Full Stack applications.
+- **Internal Tech Blog**: Topic-focused articles with custom dark-mode hero graphics.
+- **Clean UI & Animations**: Built using _shadcn/ui_ primitives and Framer Motion.
+
+---
+
+## 🛠️ Tech Stack
+
+- **Framework:** Next.js 15 (App Router)
+- **Library:** React 19
 - **Language:** TypeScript
-- **Styling:** Tailwind CSS
-- **UI Library:** shadcn/ui
-- **Animation:** Framer Motion
-- **Linting & Formatting:** ESLint, Prettier, Husky
+- **Styling:** Tailwind CSS + shadcn/ui
+- **Animations:** Motion (Framer Motion)
+- **Deployment:** Vercel
 
 ---
 
+## 🚀 Local Development
+
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/soumyadeepsarkar-2004/portfolio.git
+   cd portfolio
+   ```
+
+2. **Install dependencies:**
+   ```bash
+   pnpm install
+   ```
+
+3. **Run the development server:**
+   ```bash
+   pnpm dev
+   ```
+
+4. **Open the app:**
+   Navigate to [http://localhost:3000](http://localhost:3000) in your browser.
+
+---
+
+## 📝 License
+
+Distributed under the MIT License.

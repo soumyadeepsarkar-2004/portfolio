@@ -6,12 +6,13 @@ export const SITE_INFO = {
   name: "Soumyadeep Sarkar",
   description:
     "Explore the portfolio of Soumyadeep Sarkar, a Full Stack Developer specializing in modern web technologies.",
-  ogImage: "/assets/seo-image.png",
+  ogImage: "https://soumyadeep-dev.vercel.app/og",
   keywords: [
     "portfolio",
     "dev",
     "Soumyadeep Sarkar",
     "Full Stack Developer",
+    "Web3 Developer",
   ],
   authors: [
     {

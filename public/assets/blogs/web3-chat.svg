@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <rect width="1200" height="630" fill="#09090b"/>
+  <defs>
+    <linearGradient id="g1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#3b82f6" stop-opacity="0.2"/>
+      <stop offset="100%" stop-color="#8b5cf6" stop-opacity="0.05"/>
+    </linearGradient>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#27272a" stroke-width="1"/>
+    </pattern>
+  </defs>
+  <rect width="1200" height="630" fill="url(#g1)"/>
+  <rect width="1200" height="630" fill="url(#grid)" opacity="0.6"/>
+  <circle cx="600" cy="315" r="220" fill="none" stroke="#3b82f6" stroke-width="2" opacity="0.3"/>
+  <circle cx="600" cy="315" r="140" fill="none" stroke="#8b5cf6" stroke-width="2" stroke-dasharray="8 8" opacity="0.4"/>
+  <text x="600" y="280" fill="#f4f4f5" font-family="system-ui, sans-serif" font-size="42" font-weight="700" text-anchor="middle">Building a Decentralized Chat DApp</text>
+  <text x="600" y="340" fill="#a1a1aa" font-family="monospace" font-size="22" text-anchor="middle">React • Solidity • IPFS • Viem</text>
+  <rect x="500" y="380" width="200" height="40" rx="20" fill="#3b82f6" opacity="0.2" stroke="#3b82f6"/>
+  <text x="600" y="406" fill="#60a5fa" font-family="monospace" font-size="16" font-weight="600" text-anchor="middle">Web3 Architecture</text>
+</svg>

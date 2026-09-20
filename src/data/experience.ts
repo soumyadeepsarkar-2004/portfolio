@@ -14,8 +14,8 @@ export const EXPERIENCE: Experience[] = [
   {
     title: "Full Stack Intern",
     company: "ApexPlanet Software Pvt Ltd",
-    logo: null,
-    isExpanded: true,
+    logo: "/assets/company/apexplanet.svg",
+    isExpanded: false,
     descriptionList: [
       "Built scalable backend systems and REST APIs.",
     ],
@@ -27,7 +27,7 @@ export const EXPERIENCE: Experience[] = [
   {
     title: "Full Stack Trainee",
     company: "Pantech Solutions Pvt. Ltd.",
-    logo: null,
+    logo: "/assets/company/pantech.svg",
     isExpanded: false,
     descriptionList: [
       "Full-stack development training and mentorship.",
@@ -40,7 +40,7 @@ export const EXPERIENCE: Experience[] = [
   {
     title: "Web Development Intern",
     company: "Shadowfox Technologies",
-    logo: null,
+    logo: "/assets/company/shadowfox.svg",
     isExpanded: false,
     descriptionList: [
       "Developed responsive web applications.",
@@ -53,7 +53,7 @@ export const EXPERIENCE: Experience[] = [
   {
     title: "Data Analytics Intern",
     company: "Cognifyz Technologies",
-    logo: null,
+    logo: "/assets/company/cognifyz.svg",
     isExpanded: false,
     descriptionList: [
       "Performed data analysis and visualization.",
@@ -66,7 +66,7 @@ export const EXPERIENCE: Experience[] = [
   {
     title: "Event & Operations Lead",
     company: "GFG Campus body UIT",
-    logo: null,
+    logo: "/assets/company/gfg.svg",
     isExpanded: false,
     descriptionList: [
       "Leading events and community operations.",

@@ -38,8 +38,10 @@ export const metadata: Metadata = {
   ],
   creator: USER.fullName,
   openGraph: {
+    title: SITE_INFO.siteName,
+    description: SITE_INFO.description,
     siteName: SITE_INFO.siteName,
-    url: "/",
+    url: "https://soumyadeep-dev.vercel.app",
     type: "profile",
     firstName: USER.firstName,
     lastName: USER.lastName,
@@ -65,7 +67,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    creator: USER.twitterUsername, // Twitter username
+    title: SITE_INFO.siteName,
+    description: SITE_INFO.description,
+    creator: USER.twitterUsername,
     images: [SITE_INFO.ogImage],
   },
   icons: {

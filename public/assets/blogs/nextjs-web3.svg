@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <rect width="1200" height="630" fill="#09090b"/>
+  <defs>
+    <linearGradient id="g2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#10b981" stop-opacity="0.25"/>
+      <stop offset="100%" stop-color="#06b6d4" stop-opacity="0.05"/>
+    </linearGradient>
+    <pattern id="grid2" width="30" height="30" patternUnits="userSpaceOnUse">
+      <path d="M 30 0 L 0 0 0 30" fill="none" stroke="#27272a" stroke-width="1"/>
+    </pattern>
+  </defs>
+  <rect width="1200" height="630" fill="url(#g2)"/>
+  <rect width="1200" height="630" fill="url(#grid2)" opacity="0.5"/>
+  <text x="600" y="270" fill="#ffffff" font-family="system-ui, sans-serif" font-size="44" font-weight="800" text-anchor="middle">Next.js App Router for Full-Stack Web3</text>
+  <text x="600" y="330" fill="#a1a1aa" font-family="monospace" font-size="22" text-anchor="middle">Server Components • Server Actions • RPC Security</text>
+  <rect x="480" y="380" width="240" height="42" rx="8" fill="#10b981" opacity="0.2" stroke="#10b981"/>
+  <text x="600" y="407" fill="#34d399" font-family="monospace" font-size="16" font-weight="600" text-anchor="middle">Full-Stack Framework</text>
+</svg>

@@ -52,26 +52,26 @@ export function SingleProject({ project }: { project: Project }) {
               <div className="h-full w-full overflow-hidden rounded-t-[4px]">
                 <div className="hidden dark:block">
                   <Image
-                    alt="Dark Screenshot"
+                    alt={`${project.title} Dark Screenshot`}
                     loading="lazy"
                     width="1000"
                     height="1000"
                     decoding="async"
                     data-nimg="1"
-                    className="h-full w-full object-cover"
+                    className="h-full w-full object-cover object-top"
                     src={project.darkModeImage}
                   />
                 </div>
                 <div className="block dark:hidden">
                   <Image
                     src={project.image}
-                    alt="Light Screenshot"
+                    alt={`${project.title} Light Screenshot`}
                     loading="lazy"
                     width="1000"
                     height="1000"
                     decoding="async"
                     data-nimg="1"
-                    className="h-full w-full object-cover"
+                    className="h-full w-full object-cover object-top"
                   />
                 </div>
               </div>
@@ -113,7 +113,7 @@ export function SingleProject({ project }: { project: Project }) {
           <div className="flex items-center justify-between gap-1 py-1 select-none">
             <div className="flex gap-x-2">
               <Tooltip>
-                <TooltipTrigger>
+                <TooltipTrigger asChild>
                   <a
                     className="text-muted-foreground hover:text-foreground flex size-6 shrink-0 items-center justify-center"
                     href={project.liveLink}
@@ -128,7 +128,7 @@ export function SingleProject({ project }: { project: Project }) {
               </Tooltip>
 
               <Tooltip>
-                <TooltipTrigger>
+                <TooltipTrigger asChild>
                   <a
                     className="text-muted-foreground hover:text-foreground flex size-6 shrink-0 items-center justify-center"
                     href={project.githubLink}

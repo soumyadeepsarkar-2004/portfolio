@@ -1,0 +1,133 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="1200" height="675">
+  <defs>
+    <linearGradient id="tg-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#09090b"/>
+      <stop offset="100%" stop-color="#121217"/>
+    </linearGradient>
+    <linearGradient id="alert-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ef4444" stop-opacity="0.2"/>
+      <stop offset="100%" stop-color="#ef4444" stop-opacity="0.05"/>
+    </linearGradient>
+    <linearGradient id="hud-line" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#3b82f6"/>
+      <stop offset="100%" stop-color="#06b6d4"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Window Container Frame -->
+  <rect width="1200" height="675" rx="12" fill="url(#tg-bg)" stroke="#27272a" stroke-width="2"/>
+  
+  <!-- Browser Top Header Bar -->
+  <rect width="1200" height="42" rx="12" fill="#18181b"/>
+  <rect y="30" width="1200" height="12" fill="#18181b"/>
+  <circle cx="20" cy="21" r="6" fill="#ef4444"/>
+  <circle cx="38" cy="21" r="6" fill="#eab308"/>
+  <circle cx="56" cy="21" r="6" fill="#22c55e"/>
+  
+  <!-- Address Bar -->
+  <rect x="100" y="8" width="520" height="26" rx="6" fill="#27272a"/>
+  <text x="115" y="25" fill="#a1a1aa" font-family="monospace" font-size="12">https://track-guard-ai.vercel.app</text>
+  <rect x="1010" y="10" width="170" height="22" rx="11" fill="#16a34a" fill-opacity="0.2" stroke="#22c55e"/>
+  <circle cx="1025" cy="21" r="4" fill="#22c55e"/>
+  <text x="1037" y="25" fill="#4ade80" font-family="system-ui, sans-serif" font-size="11" font-weight="600">CV MODEL ONLINE</text>
+
+  <!-- Application Navbar -->
+  <rect x="0" y="42" width="1200" height="54" fill="#111115" stroke="#27272a" stroke-width="1"/>
+  
+  <!-- Logo & Title -->
+  <rect x="20" y="55" width="28" height="28" rx="6" fill="#2563eb"/>
+  <path d="M26 69 L36 59 M36 59 L42 65 M42 65 L44 69" stroke="#ffffff" stroke-width="2" stroke-linecap="round"/>
+  <text x="56" y="74" fill="#f4f4f5" font-family="system-ui, sans-serif" font-size="18" font-weight="700" letter-spacing="-0.5">TrackGuard AI</text>
+  <text x="180" y="74" fill="#60a5fa" font-family="monospace" font-size="12">v2.4 Locomotive Telemetry</text>
+
+  <!-- Nav Badges -->
+  <rect x="940" y="55" width="110" height="28" rx="6" fill="#18181b" stroke="#3f3f46"/>
+  <text x="995" y="73" fill="#e4e4e7" font-family="system-ui, sans-serif" font-size="12" text-anchor="middle">Train #LOC-402</text>
+  
+  <rect x="1060" y="55" width="120" height="28" rx="6" fill="#2563eb"/>
+  <text x="1120" y="73" fill="#ffffff" font-family="system-ui, sans-serif" font-size="12" font-weight="600" text-anchor="middle">Live Dashboard</text>
+
+  <!-- Main Viewport Layout -->
+  <!-- Left Side: Live Vision Feed Viewport (820px width) -->
+  <rect x="20" y="112" width="820" height="540" rx="10" fill="#050508" stroke="#27272a" stroke-width="1.5"/>
+  
+  <!-- Camera Grid Lines / Perspective Railway Visual -->
+  <path d="M220 652 L380 320 M640 652 L480 320" stroke="#3b82f6" stroke-width="3" stroke-dasharray="8 6" opacity="0.6"/>
+  <!-- Rail Ties (Sleepers) -->
+  <line x1="240" y1="620" x2="620" y2="620" stroke="#475569" stroke-width="3" opacity="0.5"/>
+  <line x1="270" y1="570" x2="590" y2="570" stroke="#475569" stroke-width="3" opacity="0.5"/>
+  <line x1="300" y1="520" x2="560" y2="520" stroke="#475569" stroke-width="3" opacity="0.5"/>
+  <line x1="330" y1="470" x2="530" y2="470" stroke="#475569" stroke-width="3" opacity="0.5"/>
+  <line x1="360" y1="420" x2="500" y2="420" stroke="#475569" stroke-width="3" opacity="0.5"/>
+
+  <!-- AI Object Detection Bounding Box (Obstacle Alert) -->
+  <rect x="390" y="410" width="85" height="75" fill="url(#alert-grad)" stroke="#ef4444" stroke-width="2.5" stroke-dasharray="4 2" rx="4"/>
+  <!-- Corner Reticles -->
+  <path d="M385 410 L395 410 M390 405 L390 415" stroke="#ef4444" stroke-width="2"/>
+  <path d="M470 410 L480 410 M475 405 L475 415" stroke="#ef4444" stroke-width="2"/>
+  <path d="M385 485 L395 485 M390 480 L390 490" stroke="#ef4444" stroke-width="2"/>
+  <path d="M470 485 L480 485 M475 480 L475 490" stroke="#ef4444" stroke-width="2"/>
+
+  <!-- Bounding Box Label Pill -->
+  <rect x="385" y="385" width="170" height="22" rx="4" fill="#ef4444"/>
+  <text x="393" y="400" fill="#ffffff" font-family="monospace" font-size="11" font-weight="bold">ALERT: Track Hazard (140m)</text>
+
+  <!-- Secondary Detection Bounding Box (Rail Signal) -->
+  <rect x="520" y="300" width="45" height="55" fill="none" stroke="#22c55e" stroke-width="1.5" rx="3"/>
+  <rect x="520" y="282" width="115" height="18" rx="3" fill="#16a34a"/>
+  <text x="525" y="295" fill="#ffffff" font-family="monospace" font-size="10" font-weight="bold">Signal: CLEAR (450m)</text>
+
+  <!-- Camera HUD Overlay Info -->
+  <!-- Top Left HUD -->
+  <rect x="35" y="127" width="220" height="30" rx="6" fill="#09090b" fill-opacity="0.8" stroke="#27272a"/>
+  <circle cx="50" cy="142" r="5" fill="#ef4444"/>
+  <text x="63" y="146" fill="#f4f4f5" font-family="monospace" font-size="12" font-weight="600">REC • FRONT CAM 01</text>
+  
+  <!-- Top Right HUD -->
+  <rect x="620" y="127" width="200" height="30" rx="6" fill="#09090b" fill-opacity="0.8" stroke="#27272a"/>
+  <text x="632" y="146" fill="#38bdf8" font-family="monospace" font-size="12">FPS: 60.0 | Latency: 12ms</text>
+
+  <!-- Crosshair Reticle Center -->
+  <circle cx="430" cy="380" r="16" fill="none" stroke="#00f0ff" stroke-width="1" opacity="0.4"/>
+  <line x1="430" y1="355" x2="430" y2="405" stroke="#00f0ff" stroke-width="1" opacity="0.4"/>
+  <line x1="405" y1="380" x2="455" y2="380" stroke="#00f0ff" stroke-width="1" opacity="0.4"/>
+
+  <!-- Right Side Control & Telemetry Panel (340px width) -->
+  <!-- Stat Card 1: Speed & Braking -->
+  <rect x="860" y="112" width="320" height="120" rx="10" fill="#111115" stroke="#27272a" stroke-width="1"/>
+  <text x="880" y="138" fill="#a1a1aa" font-family="system-ui, sans-serif" font-size="13" font-weight="600">LOCOMOTIVE TELEMETRY</text>
+  
+  <text x="880" y="180" fill="#f4f4f5" font-family="system-ui, sans-serif" font-size="34" font-weight="800">85 <tspan font-size="16" fill="#a1a1aa" font-weight="normal">km/h</tspan></text>
+  <text x="1030" y="180" fill="#ef4444" font-family="system-ui, sans-serif" font-size="34" font-weight="800">110 <tspan font-size="16" fill="#a1a1aa" font-weight="normal">m brake</tspan></text>
+  
+  <rect x="880" y="200" width="280" height="8" rx="4" fill="#27272a"/>
+  <rect x="880" y="200" width="210" height="8" rx="4" fill="#3b82f6"/>
+
+  <!-- Stat Card 2: AI Safety Status -->
+  <rect x="860" y="248" width="320" height="150" rx="10" fill="#111115" stroke="#27272a" stroke-width="1"/>
+  <text x="880" y="274" fill="#a1a1aa" font-family="system-ui, sans-serif" font-size="13" font-weight="600">COLLISION PREVENTION AI</text>
+  
+  <rect x="880" y="290" width="280" height="38" rx="6" fill="#7f1d1d" fill-opacity="0.4" stroke="#ef4444"/>
+  <text x="895" y="314" fill="#fca5a5" font-family="system-ui, sans-serif" font-size="13" font-weight="700">AUTOMATED BRAKE PRIMED</text>
+  
+  <text x="880" y="355" fill="#71717a" font-family="monospace" font-size="11">Model: YOLOv8 Deep Vision Custom</text>
+  <text x="880" y="375" fill="#71717a" font-family="monospace" font-size="11">Confidence Level: 99.4%</text>
+
+  <!-- Stat Card 3: Incident Log Feed -->
+  <rect x="860" y="414" width="320" height="238" rx="10" fill="#111115" stroke="#27272a" stroke-width="1"/>
+  <text x="880" y="440" fill="#a1a1aa" font-family="system-ui, sans-serif" font-size="13" font-weight="600">REAL-TIME INCIDENT LOG</text>
+  
+  <!-- Log Entries -->
+  <rect x="875" y="455" width="290" height="36" rx="6" fill="#18181b"/>
+  <text x="885" y="477" fill="#f87171" font-family="monospace" font-size="11">[14:28:02] Obstacle detected on Track Line 2</text>
+
+  <rect x="875" y="498" width="290" height="36" rx="6" fill="#18181b"/>
+  <text x="885" y="520" fill="#60a5fa" font-family="monospace" font-size="11">[14:27:10] Driver Alert Beacon Triggered</text>
+
+  <rect x="875" y="541" width="290" height="36" rx="6" fill="#18181b"/>
+  <text x="885" y="563" fill="#4ade80" font-family="monospace" font-size="11">[14:25:44] Track Clearance Check: PASSED</text>
+
+  <rect x="875" y="584" width="290" height="52" rx="6" fill="#1e1b4b" stroke="#4338ca"/>
+  <text x="885" y="605" fill="#c7d2fe" font-family="system-ui, sans-serif" font-size="11" font-weight="600">Created by Soumyadeep Sarkar</text>
+  <text x="885" y="623" fill="#818cf8" font-family="monospace" font-size="10">Python • PyTorch • OpenCV • FastAPI</text>
+</svg>
